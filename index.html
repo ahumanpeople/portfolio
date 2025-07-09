@@ -1,17 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<title>Jose Barrios - Academic Portfolio</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-</style>
-<script src=""></script>
-<body>
-  <div class="">
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
-    <p>This is another paragraph.</p>
-  </div>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jose Barrios | Academic & Work Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body lang="en-US">
+    <!-- https://html-preview.github.io/?url=https://github.com/ahumanpeople/portfolio/blob/main/index.html -->
+    <div class="navbar">
+        <a href="#helloPage" class="left">Hello!</a>
+        <a href="#contactPage">Contact</a>
+        <a href="#aboutPage">About Me</a>
+        <a href="#toggleGallery">Work</a>
+        <a href="#projPage">Projects</a>
+        <a href="#eduPage">Education</a>
+    </div>
+
+    <div id="helloPage" class="intro">
+        <h1>Hello, my name is Jos&eacute;!</h1>
+        <p id="projPage">Please take your time to look through my academic portfolio or my work history to learn more about me and my career.</p>
+    </div>
+
+    <div class="education">
+
+    </div>
+
+    <div class="projectsList">
+
+        <div class="project">
+            <div class="introproj">
+                <h1>Autonomous Drone CAD Project</h1>
+                <h2>Final Project for Intro to Solidworks course at San Francisco State University</h2>
+            </div>
+            <div class="slideshow container" onload="showSlidesA()">
+
+                <div class="slidesA"><img src="images/cad_drone_project/Assembly_One_JoseBarrios.PNG" alt="Image of autonomous drone assembly, all made in Solidworks"></div>
+                <div class="slidesA"><img src="images/cad_drone_project/Brushless_DC_Motor_JoseBarrios.PNG" alt="Image of brushless DC servo motor for the gripper assembly, commercially available"></div>
+                <div class="slidesA"><img src="images/cad_drone_project/Gripper_Assembly_JoseBarrios.PNG" alt="Image of gripper assembly, a custom-made claw to pick up a one inch by one inch by one inch cube"></div>
+                <div class="slidesA"><img src="images/cad_drone_project/Assembly_Two_JoseBarrios.PNG" alt="Second image of autonomous drone assembly"></div>
+                <div class="slidesA"><img src="images/cad_drone_project/Exploded_Gripper_Assembly_JoseBarrios.PNG" alt="Exploded view of gripper assembly"></div>
+                <div class="slidesA"><img src="images/cad_drone_project/Jose_Barrios_GripperAssembly.png" alt="CAD mechanical drawing for the gripper assembly"></div>
+                <div class="slidesA"><img src="images/cad_drone_project/Jose_Barrios_GripperCage.png" alt="CAD mechanical drawing for the claw housing"></div>
+                <div class="slidesA"><img src="images/cad_drone_project/Propeller_JoseBarrios.PNG" alt="Custom-made propeller with self-designed airfoil"></div>
+
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, alii fuisset qui an, cu sea impedit consectetuer. Eam no altera inermis, iudico comprehensam an vim. Ad luptatum evertitur qui. Ex vix justo quaeque invidunt. Veniam petentium concludaturque ut sed, tollit lobortis vituperata te vix.
+                Eu fuisset qualisque elaboraret est, qui ex debitis appetere. Quo officiis adipisci cu. An dolorem detraxit scribentur per, ne adhuc dolore consetetur vel. Id case elaboraret accommodare duo, has ut amet insolens. Ut unum honestatis referrentur duo, augue hendrerit abhorreant has ut.
+                Te falli adipisci volutpat has. Ex eius simul adolescens eos, dicit dolore molestie est id, legere scripserit id sit. Ea nam eius consequuntur. Te munere mucius sea. Nam malis dicit minimum ea. Ex mutat admodum pro, nec eu dicunt mediocrem deseruisse.
+                Usu unum inimicus percipitur id, velit electram cu ius, sea at nihil denique dolores. Cibo fugit sonet eam ne. Et invidunt qualisque adipiscing has, mei alia vivendo ne. Ridens epicurei tincidunt ne duo. Dicat maluisset ut qui, postea menandri in per. Partem atomorum vix ei, vel aperiri splendide ad.
+            </p>
+        </div>
+
+        <div class="projectGallery">
+            <button id="toggleGallery">View All Photos in Project Gallery</button>
+            <div id="gallery" class="gallery hidden">
+                <img src="images/cad_drone_project/Assembly_One_JoseBarrios.PNG"  class="galleryImage" alt="Image of autonomous drone assembly, all made in Solidworks">
+                <img src="images/cad_drone_project/Brushless_DC_Motor_JoseBarrios.PNG"  class="galleryImage" alt="Image of brushless DC servo motor for the gripper assembly, commercially available">
+                <img src="images/cad_drone_project/Gripper_Assembly_JoseBarrios.PNG"  class="galleryImage" alt="Image of gripper assembly, a custom-made claw to pick up a one inch by one inch by one inch cube">
+                <img src="images/cad_drone_project/Assembly_Two_JoseBarrios.PNG"  class="galleryImage" alt="Second image of autonomous drone assembly">
+                <img src="images/cad_drone_project/Exploded_Gripper_Assembly_JoseBarrios.PNG"  class="galleryImage" alt="Exploded view of gripper assembly">
+                <img src="images/cad_drone_project/Jose_Barrios_GripperAssembly.png"  class="galleryImage" alt="CAD mechanical drawing for the gripper assembly">
+                <img src="images/cad_drone_project/Jose_Barrios_GripperCage.png"  class="galleryImage" alt="CAD mechanical drawing for the claw housing">
+                <img src="images/cad_drone_project/Propeller_JoseBarrios.PNG"  class="galleryImage" alt="Custom-made propeller with self-designed airfoil">
+            </div>
+        </div>
+        <div id="imageModal" class="modal hidden">
+            <span id="closeModal">&times;</span>
+            <img class="modal-content" id="modalImg">
+            <div id="caption"></div>
+        </div>
+
+    </div>
+
+    <div class="work">
+
+        <div class="experience">
+            <h1>Special Needs Tutor &#126; Tutor Me Education</h1>
+            <h2>06/2025 &ndash; Present</h2>
+            <p>Lorem ipsum dolor sit
+            <br><span>* Technically employed by High Impact Education, LLC</span></p>
+        </div>
+
+        <div class="experience">
+            <h1>Pop Dispatcher &#126; Bliss Pops</h1>
+            <h2>06/2025 &ndash; Present</h2>
+            <p>Lorem ipsum dolor sit</p>
+        </div>
+
+        <div class="experience">
+            <h1>Grader Student Assistant &#126; San Francisco State</h1>
+            <h2>09/2024 &ndash; 05/2025</h2>
+            <p>As a teaching assistant for the Materials of Engineering course, I grade and provide detailed feedback on homework assignments and lab memos for approximately 60 students. For the Dynamics course, I grade and provide feedback for quizzes and group work assignments for another roughly 60 students. Additionally, I collaborated with the ASME study groups initiative to offer tutoring support, helping students better understand course material and improve their academic performance.</p>
+        </div>
+
+        <div class="experience">
+            <h1>STEAM Specialist &#126; Miraloma YMCA</h1>
+            <h2>11/2023 &ndash; 05/2024</h2>
+            <p>At one of the San Francisco YMCA's off-site locations, I participate as a STEAM Specialist, a volunteer position for the school's after-school program through a work-study program at ICCE (Institute for Civic and Community Engagement). I managed and developed K-5 students, working with 10 to 40 children daily. I facilitated programming that allowed students to engage with STEAM-related activities and supported the coordination of events and outreach initiatives aimed at fostering interest in science, technology, engineering, arts, and math.
+            <br><span>* Technically Community-Based Intern at ICCE (Institute for Civic and Community Engagement)</span></p>
+        </div>
+
+        <div class="experience">
+            <h1>Project Group Intern &#126; ACCO Engineered Services</h1>
+            <h2>05/2023 &ndash; 08/2023</h2>
+            <p>As a project group intern, my main tasks were to assist in the estimation and bid process for potential and new jobs, as well as participating in preliminary design and collecting proposal data. This was followed with daily tasks such as writing letters and change orders to members of the company, communicating directly with clients, handling product documents and construction plans. The internship process also involved weekly workshops organized by the company for first-year interns and new hires to become more knowledgeable about all of the different divisions within the company, as well as attending several jobsite visits as an opportunity to see our assigned projects in person.</p>
+        </div>
+
+        <div class="experience">
+            <h1>Game Day Student Staff &#126; SFSU Athletics Department</h1>
+            <h2>09/2022 &ndash; 04/2023</h2>
+            <p>As a student staff member for game days, I worked alongside a group of roughly 15 students and faculty in a variety of tasks. This included administering live broadcasts, controlling the scoreboard, managing the camera to record matches, tracking points and fouls during matches, as well as set up and took down the equipment used for the different sports. I worked in most sports matches, including soccer, basketball, baseball, volleyball, track and field, and more.</p>
+        </div>
+
+        <div class="experience">
+            <h1>Assistant HVAC Technician &#126; Airstars Corp.</h1>
+            <h2>Summers of 2020, 2021, &amp; 2022</h2>
+            <p>As an assistant technician, I worked closely with a small team of experienced HVAC technicians in various aspects. I was primarily trained in diagnostics, investigating appliance issues and conducting sales on a day-to-day basis. Additional tasks included transporting machines, parts, and other equipment to different jobs across the Greater Bay Area, as well as assisting in the installation of new appliance systems. Aside from assisting the main diagnostics technician, I led appliance diagnostics and assisted in HVAC installations.
+            <br><span>* Formerly known as Airtech Solutions</span></p>
+        </div>
+
+        <div class="experience">
+            <h1>Volunteer Tutor &#126; Hayward Homework Support Center</h1>
+            <h2>01/2017 &ndash; 06/2019</h2>
+            <p>Lorem ipsum dolor sit amet, alii fuisset qui an, cu sea impedit consectetuer. Eam no altera inermis, iudico comprehensam an vim. Ad luptatum evertitur qui. Ex vix justo quaeque invidunt. Veniam petentium concludaturque ut sed, tollit lobortis vituperata te vix.</p>
+        </div>
+
+    </div>
+
 </body>
+
+<script src="source.js"></script>
+
 </html>
