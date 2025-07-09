@@ -8,15 +8,13 @@
 }
 
 :root {
-    --naranja: hsl(19, 100%, 52%);
+    /* --naranja: hsl(19, 100%, 52%); */
     --blanco: hsl(53, 51%, 87%);
     --negro: hsl(53, 67%, 5%);
-    --gris: hsl(10, 4%, 29%);
+    /* --gris: hsl(10, 4%, 29%); */
     --cafe: rgb(71,47,23);
     --cafeconleche: rgb(206,155,104);
-    --turquesa: hsl(181, 77%, 25%);
-    --corinto: hsl(344, 59%, 17%);
-    --verde: hsl(101, 48%, 37%);
+    /* --verde: hsl(101, 48%, 37%); */
     --verdeclaro: hsl(81, 41%, 60%);
     --verdeoscuro: hsl(87, 36%, 24%);
 }
@@ -30,8 +28,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Merriweather", serif;
 }
 
-p, a, ul, ol, span, ::placeholder {
+p, a, ul, ol, ::placeholder {
     font-family: "Roboto", sans-serif;
+}
+
+ul, ol {
+    list-style-type: none;
 }
 
 div {
@@ -61,7 +63,7 @@ img {
 
 .navbar a {
     width: 12vw;
-    float: right;
+    float: left;
     background-color: var(--verdeclaro);
     text-decoration: none;
     font-family: "Merriweather", serif;
@@ -78,8 +80,13 @@ img {
     transition: 0.25s;
 }
 
-.navbar > .left {
+.navbar > #left {
     float: left;
+}
+
+.navbar > #right {
+    float: right;
+    width: 61vw;
 }
 
 /* ---------- Intro ---------- */
@@ -107,7 +114,60 @@ img {
 
 /* ---------- Education ---------- */
 
+.education {
+    width: 100%;
+    background-color: var(--blanco);
+    padding: 2em 0em;
+}
 
+.education h1, .education h2 {
+    width: 100%;
+    color: var(--verdeoscuro);
+    padding: 0em 2em;
+}
+
+.education h2 {
+    padding: 0.25em 5em;
+    text-align: left;
+}
+
+.education .alt {color: var(--cafeconleche);}
+
+#showOrgs, #showCourses, #showSkills {
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#showOrgs:hover, #showCourses:hover, #showSkills:hover {color: var(--cafe);}
+
+#studentOrgList > * {
+    font-size: 1.25em;
+    padding: 0em 8em;
+}
+
+#studentOrgList li {
+    font-family: "Merriweather", serif;
+    color: var(--cafe);
+    font-weight: bold;
+}
+
+#studentOrgList p {
+    color: var(--negro);
+    padding: 0.5em 9em;
+}
+
+#studentOrgList .alt {
+    font-weight: bold;
+    color: var(--negro);
+}
+
+.standardList {
+    font-family: "Merriweather", serif;
+    color: var(--cafe);
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 0em 8em;
+}
 
 /* ---------- Projects ---------- */
 
@@ -118,7 +178,7 @@ img {
     width: 100%;
     padding-bottom: 2%;
     background-color: var(--cafe);
-    padding: 1em 0em;
+    padding: 1em 1em;
     margin-bottom: 2em;
 }
 
@@ -162,7 +222,8 @@ img {
 
 .projectsList p {
     width: 50%;
-    padding: 0.5em 1em;
+    font-size: 1.25em;
+    padding: 0.5em 0.75em;
 }
 
 /* ---------- Work ---------- */
@@ -188,8 +249,7 @@ img {
     text-decoration: none;
     text-align: left;
     font-size: 1.5em;
-    padding-top: 0.125em;
-    padding-bottom: 0.125em;
+    padding: 0.125em 0;
 }
 
 .experience h2 {
@@ -197,8 +257,7 @@ img {
     text-decoration: none;
     text-align: right;
     font-size: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding: 0.5em 0;
 }
 
 .experience p {
@@ -312,6 +371,10 @@ img {
         width: 16.66667%;
         font-size: 1.125em;
     }
+
+    .navbar > #right {width: 83.3333333%;}
+
+    .navbar > #right > a {width: 20%;}
 }
 
 /* ---------- Media Queries: Desktop/Laptop ---------- */
@@ -327,28 +390,45 @@ img {
         font-size: 1em;
         padding: 0.75em;
         width: 50%;
+        color: var(--cafeconleche);
+        background-color: var(--cafe);
     }
 
-    .intro {
-        margin-top: 10em;
-        padding: 0.75em;
-    }
+    .navbar > #right {width: 100%;}
+
+    .navbar > #right > a {width: 50%;}
+
+    .mobilehide {display: none;}
 
     .intro h1 {font-size: 3em;}
 
     .intro p {font-size: 1.25em;}
 
-    .experience {padding: 5%;}
+    .education h1 {padding: 0em 1.5em;}
 
-    .projectsList h1, h2, p {width: 100%}
+    .education h2 {padding: 0em 1.5em;}
+
+    #studentOrgList > *, .standardList {padding: 0em 2.25em;}
+
+    #studentOrgList p {padding: 0.5em 2.25em;}
+
+    .projectsList h1, .projectsList h2, .projectsList p {width: 100%}
 
     .projectsList h1, h2 {
-        padding: 0.25em 0.75em;
+        padding: 0.5em 0.75em;
     }
 
     .slideshow {width: 100%}
 
     .slideshow img {max-width: 100%;}
+
+    #toggleGallery {margin-top: -2em;}
+
+    .gallery {margin-top: 3.5em;}
+
+    .work {margin-top: 1.5em;}
+
+    .experience {padding: 5%;}
 }
 
 @media screen and (max-width: 320px) {
