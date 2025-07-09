@@ -1,0 +1,361 @@
+/* ---------- General Styling ---------- */
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+:root {
+    --naranja: hsl(19, 100%, 52%);
+    --blanco: hsl(53, 51%, 87%);
+    --negro: hsl(53, 67%, 5%);
+    --gris: hsl(10, 4%, 29%);
+    --cafe: rgb(71,47,23);
+    --cafeconleche: rgb(206,155,104);
+    --turquesa: hsl(181, 77%, 25%);
+    --corinto: hsl(344, 59%, 17%);
+    --verde: hsl(101, 48%, 37%);
+    --verdeclaro: hsl(81, 41%, 60%);
+    --verdeoscuro: hsl(87, 36%, 24%);
+}
+
+body {
+    background-color: var(--verdeclaro);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Merriweather", serif;
+}
+
+p, a, ul, ol, span, ::placeholder {
+    font-family: "Roboto", sans-serif;
+}
+
+div {
+    float: left;
+}
+
+img {
+    width: 100%;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* ---------- Navigation Bar ---------- */
+
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    position: fixed;
+    z-index: 5;
+    background-color: var(--verdeclaro);
+}
+
+.navbar a {
+    width: 12vw;
+    float: right;
+    background-color: var(--verdeclaro);
+    text-decoration: none;
+    font-family: "Merriweather", serif;
+    color: var(--cafe);
+    text-align: center;
+    font-size: 1.25em;
+    padding: 0.75em;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    background-color: var(--cafe);
+    color: var(--cafeconleche);
+    transition: 0.25s;
+}
+
+.navbar > .left {
+    float: left;
+}
+
+/* ---------- Intro ---------- */
+
+.intro {
+    text-align: center;
+    margin-top: 6em;
+    padding: 1em;
+    width: 100%;
+    color: var(--negro);
+}
+
+.intro h1 {
+    font-size: 4em;
+}
+
+.intro p {
+    position: center;
+    padding: 10vw;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+}
+
+
+/* ---------- Education ---------- */
+
+
+
+/* ---------- Projects ---------- */
+
+.projectsList {width: 100%;}
+.projectsList * {float: left;}
+
+.introproj {
+    width: 100%;
+    padding-bottom: 2%;
+    background-color: var(--cafe);
+    padding: 1em 0em;
+    margin-bottom: 2em;
+}
+
+.projectsList h1, h2 {
+    width: 60%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--blanco);
+}
+
+.projectsList h2 {
+    font-size: 1em;
+    width: 40%;
+    text-align: left;
+}
+
+.project {
+    padding: 2% 10vw;
+    width: 100%;
+}
+
+.slideshow {  /* the slideshow container */
+    width: 50%;
+    height: 25vw;
+}
+
+.slideshow .slides {display: none;}
+
+.slideshow img {  /* the image within the slideshow */
+    position: absolute;
+    max-width: 39.5%;
+    max-height: 25vw;
+    object-fit: contain;
+    align-self: center;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+.projectsList p {
+    width: 50%;
+    padding: 0.5em 1em;
+}
+
+/* ---------- Work ---------- */
+
+.work {width: 100%;}
+.work * {float: left;}
+
+.experience {
+    padding: 2%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    width: 100%;
+}
+
+.experience:nth-of-type(odd) {background-color: var(--cafe);}
+.experience:nth-child(odd) {color: var(--blanco);}
+
+.experience:nth-of-type(even) {background-color: var(--blanco);}
+.experience:nth-child(even) {color: var(--cafe);}
+
+.experience h1 {
+    width: 75%;
+    text-decoration: none;
+    text-align: left;
+    font-size: 1.5em;
+    padding-top: 0.125em;
+    padding-bottom: 0.125em;
+}
+
+.experience h2 {
+    width: 25%;
+    text-decoration: none;
+    text-align: right;
+    font-size: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.experience p {
+    width: 95%;
+    margin-left: 5%;
+    text-decoration: none;
+    text-align: left;
+    font-size: 1.25em;
+    margin-top: 1em;
+}
+
+.experience span {
+    font-style: italic;
+    color: var(--cafeconleche);
+}
+
+/* ---------- Gallery Section ---------- */
+
+.projectGallery {
+    text-align: center;
+    padding: 2em 5vw;
+}
+
+#toggleGallery {
+    padding: 0.75em 1.5em;
+    font-size: 1.25em;
+    font-family: "Merriweather", serif;
+    background-color: var(--verdeoscuro);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: 0.25s;
+
+    
+    position: absolute;
+    margin-top: -2em;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#toggleGallery:hover {
+    background-color: var(--cafe);
+    color: var(--cafeconleche);
+}
+
+.gallery {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75em;
+}
+
+.galleryImage {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.galleryImage:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- Modal Styles ---------- */
+
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-content {
+    max-width: 90vw;
+    max-height: 80vh;
+    border-radius: 0.5em;
+    object-fit: contain;
+}
+
+#caption {
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+#closeModal {
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ---------- Media Queries: Tablet ---------- */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar a {
+        width: 16.66667%;
+        font-size: 1.125em;
+    }
+}
+
+/* ---------- Media Queries: Desktop/Laptop ---------- */
+
+@media screen and (min-width: 1025px) {
+    
+}
+
+/* ---------- Media Queries: Phone ---------- */
+
+@media screen and (max-width: 768px) {
+    .navbar a {
+        font-size: 1em;
+        padding: 0.75em;
+        width: 50%;
+    }
+
+    .intro {
+        margin-top: 10em;
+        padding: 0.75em;
+    }
+
+    .intro h1 {font-size: 3em;}
+
+    .intro p {font-size: 1.25em;}
+
+    .experience {padding: 5%;}
+
+    .projectsList h1, h2, p {width: 100%}
+
+    .projectsList h1, h2 {
+        padding: 0.25em 0.75em;
+    }
+
+    .slideshow {width: 100%}
+
+    .slideshow img {max-width: 100%;}
+}
+
+@media screen and (max-width: 320px) {
+    .navbar a {
+        font-size: 1em;
+        padding: 0.75em;
+        width: 100%;
+    }
+    
+}
