@@ -74,12 +74,6 @@ img {
     cursor: pointer;
 }
 
-.navbar a:hover {
-    background-color: var(--cafe);
-    color: var(--cafeconleche);
-    transition: 0.25s;
-}
-
 .navbar > #left {
     float: left;
 }
@@ -133,12 +127,7 @@ img {
 
 .education .alt {color: var(--cafeconleche);}
 
-#showOrgs, #showCourses, #showSkills {
-    cursor: pointer;
-    transition: 0.25s;
-}
-
-#showOrgs:hover, #showCourses:hover, #showSkills:hover {color: var(--cafe);}
+#showOrgs, #showCourses, #showSkills {cursor: pointer;}
 
 #studentOrgList > * {
     font-size: 1.25em;
@@ -181,6 +170,8 @@ img {
     padding: 1em 1em;
     margin-bottom: 2em;
 }
+
+.introproj:nth-of-type(1) {margin-top: 2em;}
 
 .projectsList h1, h2 {
     width: 60%;
@@ -232,17 +223,12 @@ img {
 .work * {float: left;}
 
 .experience {
-    padding: 2%;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding: 2% 10vw 0 10vw;
     width: 100%;
+    background-color: var(--cafe);
 }
 
-.experience:nth-of-type(odd) {background-color: var(--cafe);}
-.experience:nth-child(odd) {color: var(--blanco);}
-
-.experience:nth-of-type(even) {background-color: var(--blanco);}
-.experience:nth-child(even) {color: var(--cafe);}
+.experience * {color: var(--blanco);}
 
 .experience h1 {
     width: 75%;
@@ -274,6 +260,10 @@ img {
     color: var(--cafeconleche);
 }
 
+.experience:nth-last-of-type(1) {
+    padding-bottom: 2%;
+}
+
 /* ---------- Gallery Section ---------- */
 
 .projectGallery {
@@ -298,11 +288,6 @@ img {
     transform: translateX(-50%);
 }
 
-#toggleGallery:hover {
-    background-color: var(--cafe);
-    color: var(--cafeconleche);
-}
-
 .gallery {
     margin-top: 2em;
     display: grid;
@@ -315,10 +300,6 @@ img {
     height: auto;
     cursor: pointer;
     transition: transform 0.2s;
-}
-
-.galleryImage:hover {
-    transform: scale(1.05);
 }
 
 /* ---------- Modal Styles ---------- */
@@ -341,7 +322,6 @@ img {
 .modal-content {
     max-width: 90vw;
     max-height: 80vh;
-    border-radius: 0.5em;
     object-fit: contain;
 }
 
@@ -375,11 +355,51 @@ img {
     .navbar > #right {width: 83.3333333%;}
 
     .navbar > #right > a {width: 20%;}
+
+    .navbar a:hover {
+        background-color: var(--cafe);
+        color: var(--cafeconleche);
+        transition: 0.25s;
+    }
+
+    #showOrgs:hover, #showCourses:hover, #showSkills:hover {
+        color: var(--cafe);
+        transition: 0.25s;
+    }
+
+    #toggleGallery:hover {
+        background-color: var(--cafe);
+        color: var(--cafeconleche);
+    }
+
+    .galleryImage:hover {
+        transform: scale(1.05);
+    }
 }
 
 /* ---------- Media Queries: Desktop/Laptop ---------- */
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
+
+    .navbar a:hover {
+        background-color: var(--cafe);
+        color: var(--cafeconleche);
+        transition: 0.25s;
+    }
+
+    #showOrgs:hover, #showCourses:hover, #showSkills:hover {
+        color: var(--cafe);
+        transition: 0.25s;
+    }
+
+    #toggleGallery:hover {
+        background-color: var(--cafe);
+        color: var(--cafeconleche);
+    }
+
+    .galleryImage:hover {
+        transform: scale(1.05);
+    }
     
 }
 
@@ -400,7 +420,9 @@ img {
 
     .mobilehide {display: none;}
 
-    .intro h1 {font-size: 3em;}
+    .intro {padding: 1.5em 2em;}
+
+    .intro h1 {font-size: 2.5em;}
 
     .intro p {font-size: 1.25em;}
 
@@ -412,23 +434,27 @@ img {
 
     #studentOrgList p {padding: 0.5em 2.25em;}
 
+    .introproj:nth-of-type(1) {margin-top: 1.5em;}
+
     .projectsList h1, .projectsList h2, .projectsList p {width: 100%}
 
-    .projectsList h1, h2 {
-        padding: 0.5em 0.75em;
-    }
+    .projectsList h1, .projectsList h2 {padding: 0.5em 0.75em;}
 
-    .slideshow {width: 100%}
+    .slideshow {width: 100%; height: 45vw;}
 
-    .slideshow img {max-width: 100%;}
+    .slideshow img {max-width: 100%; max-height: 45vw; left: 0;}
+
+    .projectsList p {padding: 1em 0.75em;}
 
     #toggleGallery {margin-top: -2em;}
 
-    .gallery {margin-top: 3.5em;}
+    .gallery {margin-top: 3.5em; grid-template-columns: repeat(2, minmax(100px, 1fr));}
 
     .work {margin-top: 1.5em;}
 
-    .experience {padding: 5%;}
+    .experience {padding: 5% 5% 0 5%;}
+
+    .experience:nth-last-of-type(1) {padding-bottom: 5%;}
 }
 
 @media screen and (max-width: 320px) {
@@ -437,5 +463,4 @@ img {
         padding: 0.75em;
         width: 100%;
     }
-    
 }
