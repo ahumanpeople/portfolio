@@ -1,3 +1,23 @@
+document.getElementById("showCourses").addEventListener("click", function () {
+    const courseList = document.getElementById("courseList");
+    courseList.classList.toggle("hidden");
+    this.textContent = courseList.classList.contains("hidden") ? " > Revelant Courses Taken (Show)" : " < Revelant Courses Taken (Hide)";
+});
+
+document.getElementById("showOrgs").addEventListener("click", function () {
+    const studentOrgList = document.getElementById("studentOrgList");
+    studentOrgList.classList.toggle("hidden");
+    this.textContent = studentOrgList.classList.contains("hidden") ? " > Student Organizations (Show)" : " < Student Organizations (Hide)";
+});
+
+document.getElementById("showSkills").addEventListener("click", function () {
+    const skillList = document.getElementById("skillList");
+    skillList.classList.toggle("hidden");
+    this.textContent = skillList.classList.contains("hidden") ? " > Revelant Skills (Show)" : " < Revelant Skills (Hide)";
+});
+
+
+
 document.getElementById("toggleGallery").addEventListener("click", function () {
     const gallery = document.getElementById("gallery");
     gallery.classList.toggle("hidden");
@@ -35,4 +55,19 @@ function showSlidesA() {
     slides[slideIndexA-1].style.display = "block";
 
     setTimeout(showSlidesA, 5000);
+}
+
+var slideIndexB = 0;
+showSlidesB();
+
+function showSlidesB() {
+    var i;
+    var slides = document.getElementsByClassName("slidesB");
+    
+    for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+    slideIndexB++;
+    if (slideIndexB > slides.length) {slideIndexB = 1;}
+    slides[slideIndexB-1].style.display = "block";
+
+    setTimeout(showSlidesB, 5000);
 }
