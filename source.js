@@ -21,7 +21,7 @@ document.getElementById("showSkills").addEventListener("click", function () {
 document.getElementById("toggleGallery").addEventListener("click", function () {
     const gallery = document.getElementById("gallery");
     gallery.classList.toggle("hidden");
-    this.textContent = gallery.classList.contains("hidden") ? "View All Photos in Project Gallery" : "Hide All Photos in Project Gallery";
+    this.textContent = gallery.classList.contains("hidden") ? "View All Photos" : "Hide All Photos";
 });
 
 const modal = document.getElementById("imageModal");
