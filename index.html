@@ -14,20 +14,76 @@
 <body lang="en-US">
     <!-- https://html-preview.github.io/?url=https://github.com/ahumanpeople/portfolio/blob/main/index.html -->
     <div class="navbar">
-        <a href="index.html" class="left">Hello!</a>
-        <a href="#contactPage">Contact</a>
-        <a href="#aboutPage">About Me</a>
-        <a href="#toggleGallery">Work</a>
-        <a href="#projPage">Projects</a>
-        <a href="#eduPage">Education</a>
+        <a class="mobilehide" href="index.html" id="left">Hello!</a>
+        <div id="right">
+            <a href="#eduPage">Education</a>
+            <a href="#projPage">Projects</a>
+            <a href="#toggleGallery">Work</a>
+            <a class="mobilehide" href="#aboutPage">About Me</a>
+            <a href="#contactPage">Contact</a>
+        </div>
     </div>
 
-    <div id="helloPage" class="intro">
+    <div class="intro">
         <h1>Hello, my name is Jos&eacute;!</h1>
-        <p id="projPage">Please take your time to look through my academic portfolio or my work history to learn more about me and my career.</p>
+        <p id="eduPage">Please take your time to look through my academic portfolio or my work history to learn more about me and my career.</p>
     </div>
 
     <div class="education">
+
+        <h1>I am pursuing a B.S. degree in Mechanical Engineering <span class="alt">* with a minor in Electrical Engineering</span></h1>
+        <h2> > Start Date: August 2022</h2>
+
+        <h2 id="showCourses"> > Revelant Courses Taken (Show)</h2>
+        <ul class="hidden standardList" id="courseList">
+            <li>> Control Systems</li>
+            <li>> Electromechanical Systems</li>
+            <li>> Fluid Dynamics</li>
+            <li>> </li>
+            <li>> </li>
+            <li>> </li>
+            <li>> </li>
+            <li>> </li>
+            <li>> </li>
+        </ul>
+
+        <h2 id="showOrgs"> > Student Organizations (Show)</h2>
+        <ul class="hidden" id="studentOrgList">
+            <li>> American Society of Mechanical Engineers (ASME)</li>
+            <p>
+                <span class="alt">Member (January 2023 to May 2024) > Co-President (May 2024 to Present)</span>
+                <br>
+                As co-president of the ASME student chapter at San Francisco State, myself alongside our team of officers have been leading a couple of new initiatives to provide a diverse range of opportunities and events for engineering students at our university. We have massively increased outreaching and canvassing efforts on campus, resulting in increasing our membership numbers by more than double and maintaining high attendance for all of our events, regardless of their nature. Alongside this, we have led a more collaborative direction between student-led clubs on campus, as well as prioritizing community via hosting social events, creating a more active and interconnected environment for engineering students. Additionally, we’ve hosted a variety of different workshops and info sessions, inviting a diverse pool of companies to appease the wide interests of our student body.
+            </p>
+            <li>> American Society of Civil Engineers (ASCE)</li>
+            <p>
+                <span class="alt">Member (January 2023 to May 2024) > Outreach Officer (May 2024 to May 2025) > Member (May 2025 to Present)</span>
+                <br>
+                As one of the outreach officers for the ASCE student chapter at San Francisco State, we prioritized reaching out to as many civil-related companies as possible to provide students with a variety of companies in different industries within the field for our school’s semiannual engineering career fair. I also helped maintain good relations with these companies, inviting top engineering firms such as McCarthy, PG&E, and DPR Construction to our campus for company info sessions. Additionally, we have been currently working with UC Berkeley to host the Mid-Pacific ASCE Student Symposium for April 2025, which involves contacting potential judges and communicating with other ASCE chapters.
+            </p>
+            <li>> Tau Beta Pi (<span style="font-weight: 200;">&Tau;&Beta;&Pi;</span>) Engineering Society</li>
+            <p><span class="alt">Member (May 2025 to Present)</span></p>
+            <li>> National Society of Black Engineers (NSBE)</li>
+            <p><span class="alt">Member (January 2025 to Present)</span></p>
+            <li>> Society of Hispanic Professional Engineers (SHPE)</li>
+            <p><span class="alt">Member (January 2023 to Present)</span></p>
+            <li>> Mathematics, Engineering, Science Achievement (MESA) Program</li>
+            <p><span class="alt">Member (January 2023 to Present)</span></p>
+            <li>> Educational Opportunity Program (EOP)</li>
+            <p><span class="alt">Member (August 2022 to Present)</span></p>
+        </ul>
+
+        <h2 id="showSkills"> > Revelant Skills (Show)</h2>
+        <ul class="hidden standardList" id="skillList">
+            <li>> Solidworks</li>
+            <li>> AutoCAD</li>
+            <li>> Python</li>
+            <li>> HTML</li>
+            <li>> CSS</li>
+            <li>> Javascript</li>
+        </ul>
+
+        <h2 id="projPage"> > Graduation Date: December 2026 <span class="alt">* Projected Date</span></h2>
 
     </div>
 
@@ -36,7 +92,7 @@
         <div class="project">
             <div class="introproj">
                 <h1>Autonomous Drone CAD Project</h1>
-                <h2>Final Project for Intro to Solidworks course at San Francisco State University</h2>
+                <h2>Intro to Solidworks course at San Francisco State University</h2>
             </div>
             <div class="slideshow container" onload="showSlidesA()">
 
@@ -51,7 +107,25 @@
 
             </div>
             <p>
-                Lorem ipsum dolor sit amet, alii fuisset qui an, cu sea impedit consectetuer. Eam no altera inermis, iudico comprehensam an vim. Ad luptatum evertitur qui. Ex vix justo quaeque invidunt. Veniam petentium concludaturque ut sed, tollit lobortis vituperata te vix.
+                (Designed in Solidworks) Lorem ipsum dolor sit amet, alii fuisset qui an, cu sea impedit consectetuer. Eam no altera inermis, iudico comprehensam an vim. Ad luptatum evertitur qui. Ex vix justo quaeque invidunt. Veniam petentium concludaturque ut sed, tollit lobortis vituperata te vix.
+                Eu fuisset qualisque elaboraret est, qui ex debitis appetere. Quo officiis adipisci cu. An dolorem detraxit scribentur per, ne adhuc dolore consetetur vel. Id case elaboraret accommodare duo, has ut amet insolens. Ut unum honestatis referrentur duo, augue hendrerit abhorreant has ut.
+                Te falli adipisci volutpat has. Ex eius simul adolescens eos, dicit dolore molestie est id, legere scripserit id sit. Ea nam eius consequuntur. Te munere mucius sea. Nam malis dicit minimum ea. Ex mutat admodum pro, nec eu dicunt mediocrem deseruisse.
+                Usu unum inimicus percipitur id, velit electram cu ius, sea at nihil denique dolores. Cibo fugit sonet eam ne. Et invidunt qualisque adipiscing has, mei alia vivendo ne. Ridens epicurei tincidunt ne duo. Dicat maluisset ut qui, postea menandri in per. Partem atomorum vix ei, vel aperiri splendide ad.
+            </p>
+        </div>
+
+        <div class="project">
+            <div class="introproj">
+                <h1>Screwdriver Gearbox CAD Project</h1>
+                <h2>Engineering Graphics course at San Francisco State University</h2>
+            </div>
+            <div class="slideshow container" onload="showSlidesB()">
+
+                <div class="slidesB"><img src="images/gearbox_cad_project/Gearbox_Layout.png" alt="CAD mechanical drawing for the gearbox assembly"></div>
+
+            </div>
+            <p>
+                (Designed in AutoCAD) Lorem ipsum dolor sit amet, alii fuisset qui an, cu sea impedit consectetuer. Eam no altera inermis, iudico comprehensam an vim. Ad luptatum evertitur qui. Ex vix justo quaeque invidunt. Veniam petentium concludaturque ut sed, tollit lobortis vituperata te vix.
                 Eu fuisset qualisque elaboraret est, qui ex debitis appetere. Quo officiis adipisci cu. An dolorem detraxit scribentur per, ne adhuc dolore consetetur vel. Id case elaboraret accommodare duo, has ut amet insolens. Ut unum honestatis referrentur duo, augue hendrerit abhorreant has ut.
                 Te falli adipisci volutpat has. Ex eius simul adolescens eos, dicit dolore molestie est id, legere scripserit id sit. Ea nam eius consequuntur. Te munere mucius sea. Nam malis dicit minimum ea. Ex mutat admodum pro, nec eu dicunt mediocrem deseruisse.
                 Usu unum inimicus percipitur id, velit electram cu ius, sea at nihil denique dolores. Cibo fugit sonet eam ne. Et invidunt qualisque adipiscing has, mei alia vivendo ne. Ridens epicurei tincidunt ne duo. Dicat maluisset ut qui, postea menandri in per. Partem atomorum vix ei, vel aperiri splendide ad.
@@ -61,14 +135,17 @@
         <div class="projectGallery">
             <button id="toggleGallery">View All Photos in Project Gallery</button>
             <div id="gallery" class="gallery hidden">
-                <img src="images/cad_drone_project/Assembly_One_JoseBarrios.PNG"  class="galleryImage" alt="Image of autonomous drone assembly, all made in Solidworks">
-                <img src="images/cad_drone_project/Brushless_DC_Motor_JoseBarrios.PNG"  class="galleryImage" alt="Image of brushless DC servo motor for the gripper assembly, commercially available">
-                <img src="images/cad_drone_project/Gripper_Assembly_JoseBarrios.PNG"  class="galleryImage" alt="Image of gripper assembly, a custom-made claw to pick up a one inch by one inch by one inch cube">
-                <img src="images/cad_drone_project/Assembly_Two_JoseBarrios.PNG"  class="galleryImage" alt="Second image of autonomous drone assembly">
-                <img src="images/cad_drone_project/Exploded_Gripper_Assembly_JoseBarrios.PNG"  class="galleryImage" alt="Exploded view of gripper assembly">
-                <img src="images/cad_drone_project/Jose_Barrios_GripperAssembly.png"  class="galleryImage" alt="CAD mechanical drawing for the gripper assembly">
-                <img src="images/cad_drone_project/Jose_Barrios_GripperCage.png"  class="galleryImage" alt="CAD mechanical drawing for the claw housing">
-                <img src="images/cad_drone_project/Propeller_JoseBarrios.PNG"  class="galleryImage" alt="Custom-made propeller with self-designed airfoil">
+
+                <img src="images/cad_drone_project/Assembly_One_JoseBarrios.PNG" class="galleryImage" alt="Image of autonomous drone assembly, all made in Solidworks">
+                <img src="images/cad_drone_project/Brushless_DC_Motor_JoseBarrios.PNG" class="galleryImage" alt="Image of brushless DC servo motor for the gripper assembly, commercially available">
+                <img src="images/cad_drone_project/Gripper_Assembly_JoseBarrios.PNG" class="galleryImage" alt="Image of gripper assembly, a custom-made claw to pick up a one inch by one inch by one inch cube">
+                <img src="images/cad_drone_project/Assembly_Two_JoseBarrios.PNG" class="galleryImage" alt="Second image of autonomous drone assembly">
+                <img src="images/cad_drone_project/Exploded_Gripper_Assembly_JoseBarrios.PNG" class="galleryImage" alt="Exploded view of gripper assembly">
+                <img src="images/cad_drone_project/Jose_Barrios_GripperAssembly.png" class="galleryImage" alt="CAD mechanical drawing for the gripper assembly">
+                <img src="images/cad_drone_project/Jose_Barrios_GripperCage.png" class="galleryImage" alt="CAD mechanical drawing for the claw housing">
+                <img src="images/cad_drone_project/Propeller_JoseBarrios.PNG" class="galleryImage" alt="Custom-made propeller with self-designed airfoil">
+                <img src="images/gearbox_cad_project/Gearbox_Layout.png" class="galleryImage" alt="CAD mechanical drawing for the gearbox assembly">
+
             </div>
         </div>
         <div id="imageModal" class="modal hidden">
@@ -82,52 +159,52 @@
     <div class="work">
 
         <div class="experience">
-            <h1>Special Needs Tutor &#126; Tutor Me Education</h1>
+            <h1>> Special Needs Tutor &#126; Tutor Me Education</h1>
             <h2>06/2025 &ndash; Present</h2>
             <p>Lorem ipsum dolor sit
             <br><span>* Technically employed by High Impact Education, LLC</span></p>
         </div>
 
         <div class="experience">
-            <h1>Pop Dispatcher &#126; Bliss Pops</h1>
+            <h1>> Pop Dispatcher @ Bliss Pops</h1>
             <h2>06/2025 &ndash; Present</h2>
             <p>Lorem ipsum dolor sit</p>
         </div>
 
         <div class="experience">
-            <h1>Grader Student Assistant &#126; San Francisco State</h1>
+            <h1>> Grader Student Assistant @ San Francisco State</h1>
             <h2>09/2024 &ndash; 05/2025</h2>
             <p>As a teaching assistant for the Materials of Engineering course, I grade and provide detailed feedback on homework assignments and lab memos for approximately 60 students. For the Dynamics course, I grade and provide feedback for quizzes and group work assignments for another roughly 60 students. Additionally, I collaborated with the ASME study groups initiative to offer tutoring support, helping students better understand course material and improve their academic performance.</p>
         </div>
 
         <div class="experience">
-            <h1>STEAM Specialist &#126; Miraloma YMCA</h1>
+            <h1>> STEAM Specialist @ Miraloma YMCA</h1>
             <h2>11/2023 &ndash; 05/2024</h2>
             <p>At one of the San Francisco YMCA's off-site locations, I participate as a STEAM Specialist, a volunteer position for the school's after-school program through a work-study program at ICCE (Institute for Civic and Community Engagement). I managed and developed K-5 students, working with 10 to 40 children daily. I facilitated programming that allowed students to engage with STEAM-related activities and supported the coordination of events and outreach initiatives aimed at fostering interest in science, technology, engineering, arts, and math.
             <br><span>* Technically Community-Based Intern at ICCE (Institute for Civic and Community Engagement)</span></p>
         </div>
 
         <div class="experience">
-            <h1>Project Group Intern &#126; ACCO Engineered Services</h1>
+            <h1>> Project Group Intern @ ACCO Engineered Services</h1>
             <h2>05/2023 &ndash; 08/2023</h2>
             <p>As a project group intern, my main tasks were to assist in the estimation and bid process for potential and new jobs, as well as participating in preliminary design and collecting proposal data. This was followed with daily tasks such as writing letters and change orders to members of the company, communicating directly with clients, handling product documents and construction plans. The internship process also involved weekly workshops organized by the company for first-year interns and new hires to become more knowledgeable about all of the different divisions within the company, as well as attending several jobsite visits as an opportunity to see our assigned projects in person.</p>
         </div>
 
         <div class="experience">
-            <h1>Game Day Student Staff &#126; SFSU Athletics Department</h1>
+            <h1>> Game Day Student Staff @ SFSU Athletics Department</h1>
             <h2>09/2022 &ndash; 04/2023</h2>
             <p>As a student staff member for game days, I worked alongside a group of roughly 15 students and faculty in a variety of tasks. This included administering live broadcasts, controlling the scoreboard, managing the camera to record matches, tracking points and fouls during matches, as well as set up and took down the equipment used for the different sports. I worked in most sports matches, including soccer, basketball, baseball, volleyball, track and field, and more.</p>
         </div>
 
         <div class="experience">
-            <h1>Assistant HVAC Technician &#126; Airstars Corp.</h1>
+            <h1>> Assistant HVAC Technician @ Airstars Corp.</h1>
             <h2>Summers of 2020, 2021, &amp; 2022</h2>
             <p>As an assistant technician, I worked closely with a small team of experienced HVAC technicians in various aspects. I was primarily trained in diagnostics, investigating appliance issues and conducting sales on a day-to-day basis. Additional tasks included transporting machines, parts, and other equipment to different jobs across the Greater Bay Area, as well as assisting in the installation of new appliance systems. Aside from assisting the main diagnostics technician, I led appliance diagnostics and assisted in HVAC installations.
             <br><span>* Formerly known as Airtech Solutions</span></p>
         </div>
 
         <div class="experience">
-            <h1>Volunteer Tutor &#126; Hayward Homework Support Center</h1>
+            <h1>> Volunteer Tutor @ Hayward Homework Support Center</h1>
             <h2>01/2017 &ndash; 06/2019</h2>
             <p>Lorem ipsum dolor sit amet, alii fuisset qui an, cu sea impedit consectetuer. Eam no altera inermis, iudico comprehensam an vim. Ad luptatum evertitur qui. Ex vix justo quaeque invidunt. Veniam petentium concludaturque ut sed, tollit lobortis vituperata te vix.</p>
         </div>
