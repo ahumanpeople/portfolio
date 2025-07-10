@@ -264,6 +264,58 @@ img {
     padding-bottom: 2%;
 }
 
+/* ---------- About Me/Contact ---------- */
+
+.whoAmI {
+    width: 100%;
+    background-color: var(--verdeclaro);
+    padding: 2em 0em;
+}
+
+.whoAmI h1, .whoAmI h2 {
+    width: 100%;
+    color: var(--negro);
+    padding: 0em 2em;
+}
+
+.whoAmI h2 {padding: 0.25em 5em; text-align: left;}
+
+.whoAmI p {
+    font-size: 1.25em;
+    padding: 1.5em 5em;
+    float: left;
+    width: 100%;
+    color: var(--negro);
+}
+
+.whoAmI a {text-decoration: none;}
+
+.whoAmI .alt {color: var(--verdeoscuro);}
+
+.slideshow.adaptive {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding: 2.5em 0.5em 0em 0.5em;
+    width: 100%;
+    height: 35vh;
+}
+
+.slidesAboutMe {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30%;
+    max-width: 30%;
+}
+
+.slidesAboutMe img {
+    max-width: 30vw;
+    max-height: 30vh;
+    height: auto;
+    object-fit: contain;
+}
+
 /* ---------- Gallery Section ---------- */
 
 .projectGallery {
@@ -375,6 +427,21 @@ img {
     .galleryImage:hover {
         transform: scale(1.05);
     }
+    
+    .slideshow.adaptive {
+        width: 100%;
+        height: 50vw;
+        padding: 2.5em 0.5em 0.5em 0.5em;
+        gap: 0;
+    }
+
+    .slidesAboutMe {width: 100%; height: 45vw;}
+
+    .slidesAboutMe img {
+        max-width: 100%;
+        max-height: 45vw;
+        left: 0;
+    }
 }
 
 /* ---------- Media Queries: Desktop/Laptop ---------- */
@@ -387,7 +454,7 @@ img {
         transition: 0.25s;
     }
 
-    #showOrgs:hover, #showCourses:hover, #showSkills:hover {
+    #showOrgs:hover, #showCourses:hover, #showSkills:hover, .whoAmI a h2:hover {
         color: var(--cafe);
         transition: 0.25s;
     }
@@ -455,6 +522,27 @@ img {
     .experience {padding: 5% 5% 0 5%;}
 
     .experience:nth-last-of-type(1) {padding-bottom: 5%;}
+
+    .whoAmI {padding: 1.5em 0em;}
+
+    .whoAmI h1, .whoAmI h2 {padding: 0.25em 1.5em;}
+
+    .whoAmI p {padding: 1.75em 2.5em 1.5em 2.5em;}
+    
+    .slideshow.adaptive {
+        width: 100%;
+        height: 50vw;
+        padding: 1.5em 0.5em 0.5em 0.5em;
+        gap: 0;
+    }
+
+    .slidesAboutMe {width: 100%; height: 45vw;}
+
+    .slidesAboutMe img {
+        max-width: 100%;
+        max-height: 45vw;
+        left: 0;
+    }
 }
 
 @media screen and (max-width: 320px) {
