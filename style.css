@@ -270,6 +270,7 @@ img {
     width: 100%;
     background-color: var(--verdeclaro);
     padding: 2em 0em;
+    margin-bottom: 2em;
 }
 
 .whoAmI h1, .whoAmI h2 {
