@@ -71,3 +71,42 @@ function showSlidesB() {
 
     setTimeout(showSlidesB, 5000);
 }
+
+// PROBLEM CODE BELOW
+
+var aboutMeIndex = 0;
+var aboutMeTimeout;
+var viewport = window.matchMedia("(max-width: 768px)");
+
+function showAboutMeSlides(viewport) {
+    const slides = document.getElementsByClassName("slidesAboutMe");
+    if (aboutMeTimeout)
+    {
+        clearTimeout(aboutMeTimeout);
+        aboutMeTimeout = null;
+    }
+
+    if (viewport.matches)
+    {
+        for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+        aboutMeIndex++;
+
+        if (aboutMeIndex > slides.length) {aboutMeIndex = 1;}
+        slides[aboutMeIndex-1].style.display = "block";
+        aboutMeTimeout = setTimeout(() => showAboutMeSlides(viewport), 5000);
+    }
+    else
+    {
+        for (i = 0; i < slides.length; i++)
+        {
+            slides[i].style.display = "block";
+        }
+    }
+}
+
+showAboutMeSlides(viewport);
+// Update on resize
+viewport.addEventListener("change", function () {
+    aboutMeIndex = 0;
+    showAboutMeSlides(viewport);
+});
