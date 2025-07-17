@@ -165,10 +165,8 @@ img {
 
 .introproj {
     width: 100%;
-    padding-bottom: 2%;
-    background-color: var(--cafe);
-    padding: 1em 1em;
-    margin-bottom: 2em;
+    background-color: var(--blanco);
+    padding: 1.5em 1em;
 }
 
 .introproj:nth-of-type(1) {margin-top: 2em;}
@@ -178,30 +176,39 @@ img {
     text-decoration: none;
     text-align: center;
     font-size: 1.5em;
-    color: var(--blanco);
+    color: var(--verdeoscuro);
 }
 
 .projectsList h2 {
-    font-size: 1em;
     width: 40%;
     text-align: left;
 }
 
-.project {
-    padding: 2% 10vw;
+.projectsList p {
     width: 100%;
+    font-size: 1.25em;
+    padding: 1em 0.75em 0.5em 0.75em;
+}
+
+.project {
+    /* padding: 2% 10vw; */
+    margin: 0;
+    margin-bottom: 2%;
+    width: 100%;
+    padding: 0 5em;
 }
 
 .slideshow {  /* the slideshow container */
-    width: 50%;
+    width: 100%;
     height: 25vw;
+    margin: 1.5em 0;
 }
 
 .slideshow .slides {display: none;}
 
 .slideshow img {  /* the image within the slideshow */
     position: absolute;
-    max-width: 39.5%;
+    max-width: 89.5%;
     max-height: 25vw;
     object-fit: contain;
     align-self: center;
@@ -211,10 +218,18 @@ img {
     animation-duration: 2s;
 }
 
-.projectsList p {
-    width: 50%;
-    font-size: 1.25em;
-    padding: 0.5em 0.75em;
+.projectsList > h1 {
+    width: 100%;
+    padding: 1em;
+    color: var(--negro);
+    font-size: 2em;
+}
+
+.projectsList > p {
+    font-size: 1.5em;
+    position: center;
+    text-align: center;
+    padding: 0em 10vw;
 }
 
 /* ---------- Work ---------- */
@@ -225,10 +240,10 @@ img {
 .experience {
     padding: 2% 10vw 0 10vw;
     width: 100%;
-    background-color: var(--cafe);
+    background-color: var(--blanco);
 }
 
-.experience * {color: var(--blanco);}
+.experience * {color: var(--verdeoscuro);}
 
 .experience h1 {
     width: 75%;
@@ -270,7 +285,7 @@ img {
     width: 100%;
     background-color: var(--verdeclaro);
     padding: 2em 0em;
-    margin-bottom: 2em;
+    padding-bottom: 4em;
 }
 
 .whoAmI h1, .whoAmI h2 {
@@ -415,9 +430,16 @@ img {
         transition: 0.25s;
     }
 
-    #showOrgs:hover, #showCourses:hover, #showSkills:hover {
+    #showOrgs:hover, #showCourses:hover, #showSkills:hover, .project > h2:hover {
         color: var(--cafe);
         transition: 0.25s;
+        cursor: pointer;
+    }
+
+    .project > h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5em;
     }
 
     #toggleGallery:hover {
@@ -449,15 +471,22 @@ img {
 
 @media screen and (min-width: 1024px) {
 
+    .project > h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
     .navbar a:hover {
         background-color: var(--cafe);
         color: var(--cafeconleche);
         transition: 0.25s;
     }
 
-    #showOrgs:hover, #showCourses:hover, #showSkills:hover, .whoAmI a h2:hover {
+    #showOrgs:hover, #showCourses:hover, #showSkills:hover, .whoAmI a h2:hover, .project > h2:hover {
         color: var(--cafe);
         transition: 0.25s;
+        cursor: pointer;
     }
 
     #toggleGallery:hover {
@@ -502,17 +531,23 @@ img {
 
     #studentOrgList p {padding: 0.5em 2.25em;}
 
+    .introproj {padding: 1em;}
+
     .introproj:nth-of-type(1) {margin-top: 1.5em;}
 
-    .projectsList h1, .projectsList h2, .projectsList p {width: 100%}
-
-    .projectsList h1, .projectsList h2 {padding: 0.5em 0.75em;}
+    .projectsList h1, .projectsList h2 {width: 100%; padding: 0.5em 0.75em; text-align: center;}
 
     .slideshow {width: 100%; height: 45vw;}
 
     .slideshow img {max-width: 100%; max-height: 45vw; left: 0;}
 
-    .projectsList p {padding: 1em 0.75em;}
+    .projectsList p {padding: 0.75em; padding-top: 0;}
+
+    .projectsList > h1 {margin-top: 0.25em;}
+
+    .projectsList > p {font-size: 1.25em; padding: 0em 10vw;}
+
+    .project h2 {padding-top: 0;}
 
     #toggleGallery {margin-top: -2em;}
 
