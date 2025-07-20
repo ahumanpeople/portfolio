@@ -64,7 +64,7 @@ img { /* image preset condition */
     background-color: var(--verdeclaro);
     text-decoration: none;
     font-family: "Merriweather", serif;
-    color: var(--cafe);
+    color: var(--negro);
     text-align: center;
     font-size: 1.25em;
     padding: 0.75em;
@@ -102,7 +102,6 @@ img { /* image preset condition */
     font-size: 1.5em;
 }
 
-
 /* ---------- Education ---------- */
 
 .education { /* container for the entire education section */
@@ -122,7 +121,7 @@ img { /* image preset condition */
     text-align: left;
 }
 
-.education .alt {color: var(--cafeconleche);}
+.education .alt {color: var(--cafe);}
 
 #studentOrgList > * { /* for the sublist about student organizations */
     font-size: 1.25em;
@@ -266,11 +265,43 @@ img { /* image preset condition */
 
 .experience span { /* for light italicized text in job desc */
     font-style: italic;
-    color: var(--cafeconleche);
+    color: var(--cafe);
 }
 
 .experience:nth-last-of-type(1) { /* adds extra buffer to even out space */
     padding-bottom: 2%;
+}
+
+#resumeButton { /* holds the resume "button" secure */
+    width: 100%;
+    background-color: var(--blanco);
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+#openResume { /* for "view my complete resume" "button", which is actually a link */
+    padding: 0.75em 1.5em;
+    font-size: 1.25em;
+    font-family: "Merriweather", serif;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--verdeoscuro);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: 0.25s;
+
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30%;
+    max-width:fit-content;
+    /*
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    */
 }
 
 /* ---------- About Me/Contact ---------- */
@@ -300,7 +331,7 @@ img { /* image preset condition */
 
 .whoAmI a {text-decoration: none;} /* hide link */
 
-.whoAmI .alt {color: var(--verdeoscuro);} /* add alternative dark green text */
+.whoAmI .alt {color: var(--cafe);} /* add alternative brown text */
 
 .slideshow.adaptive { /* add extra formatting for gallery that turns into slideshow */
     display: flex;
@@ -429,8 +460,8 @@ img { /* image preset condition */
     .navbar > #right > a {width: 20%;}
 
     .navbar a:hover {
-        background-color: var(--cafe);
-        color: var(--cafeconleche);
+        background-color: var(--verdeoscuro);
+        color: var(--blanco);
         transition: 0.25s;
     }
 
@@ -447,8 +478,13 @@ img { /* image preset condition */
     }
 
     #toggleGallery:hover {
-        background-color: var(--cafe);
-        color: var(--cafeconleche);
+        background-color: var(--verdeclaro);
+        color: var(--negro);
+    }
+
+    #openResume:hover {
+        background-color: var(--blanco);
+        color: var(--verdeoscuro);
     }
 
     .galleryImage:hover {
@@ -483,8 +519,8 @@ img { /* image preset condition */
     }
 
     .navbar a:hover {
-        background-color: var(--cafe);
-        color: var(--cafeconleche);
+        background-color: var(--verdeoscuro);
+        color: var(--blanco);
         transition: 0.25s;
     }
 
@@ -495,15 +531,19 @@ img { /* image preset condition */
     }
 
     #toggleGallery:hover {
-        background-color: var(--cafe);
-        color: var(--cafeconleche);
+        background-color: var(--verdeclaro);
+        color: var(--negro);
+    }
+
+    #openResume:hover {
+        background-color: var(--blanco);
+        color: var(--verdeoscuro);
     }
 
     .galleryImage:hover {
         -ms-transform: scale(1.05);
         transform: scale(1.05);
     }
-    
 }
 
 /* ---------- Media Queries: Phone ---------- */
@@ -513,8 +553,8 @@ img { /* image preset condition */
         font-size: 1em;
         padding: 0.75em;
         width: 50%;
-        color: var(--cafeconleche);
-        background-color: var(--cafe);
+        color: var(--blanco);
+        background-color: var(--verdeoscuro);
     }
 
     .navbar > #right {width: 100%;}
