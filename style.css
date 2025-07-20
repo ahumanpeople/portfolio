@@ -1,50 +1,47 @@
 /* ---------- General Styling ---------- */
 
-* {
+* { /* resets all elements to have no filling; easier sizing customization */
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
     border: 0px;
 }
 
-:root {
-    /* --naranja: hsl(19, 100%, 52%); */
+:root { /* variables for color mostly */
     --blanco: hsl(53, 51%, 87%);
     --negro: hsl(53, 67%, 5%);
-    /* --gris: hsl(10, 4%, 29%); */
     --cafe: rgb(71,47,23);
     --cafeconleche: rgb(206,155,104);
-    /* --verde: hsl(101, 48%, 37%); */
     --verdeclaro: hsl(81, 41%, 60%);
     --verdeoscuro: hsl(87, 36%, 24%);
 }
 
-body {
+body { /* adjust website body */
     background-color: var(--verdeclaro);
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 { /* add font for title and headers */
     font-family: "Merriweather", serif;
 }
 
-p, a, ul, ol, ::placeholder {
+p, a, ul, ol, ::placeholder { /* add font of filler text */
     font-family: "Roboto", sans-serif;
 }
 
-ul, ol {
+ul, ol { /* makes lists easier to customize */
     list-style-type: none;
 }
 
-div {
+div { /* div pre-set condition */
     float: left;
 }
 
-img {
+img { /* image preset condition */
     width: 100%;
 }
 
-.container::after {
+.container::after { /* preset for gallery photos */
     content: "";
     clear: both;
     display: table;
@@ -52,16 +49,16 @@ img {
 
 /* ---------- Navigation Bar ---------- */
 
-.navbar {
+.navbar { /* for navigation menu bar at top of webpage */
     top: 0;
     left: 0;
     width: 100vw;
     position: fixed;
-    z-index: 5;
+    z-index: 5; /* overlays navigation bar over all content inside webpage */
     background-color: var(--verdeclaro);
 }
 
-.navbar a {
+.navbar a { /* for buttons inside navigation menu bar */
     width: 12vw;
     float: left;
     background-color: var(--verdeclaro);
@@ -74,18 +71,18 @@ img {
     cursor: pointer;
 }
 
-.navbar > #left {
+.navbar > #left { /* makes "hello!" button go left */
     float: left;
 }
 
-.navbar > #right {
+.navbar > #right { /* makes rest of the buttons go right */
     float: right;
     width: 61vw;
 }
 
 /* ---------- Intro ---------- */
 
-.intro {
+.intro { /* container for intro to webpage near top */
     text-align: center;
     margin-top: 6em;
     padding: 1em;
@@ -108,49 +105,47 @@ img {
 
 /* ---------- Education ---------- */
 
-.education {
+.education { /* container for the entire education section */
     width: 100%;
     background-color: var(--blanco);
     padding: 2em 0em;
 }
 
-.education h1, .education h2 {
+.education h1, .education h2 { /* for the degree info and already visible list */
     width: 100%;
     color: var(--verdeoscuro);
     padding: 0em 2em;
 }
 
-.education h2 {
+.education h2 { /* additional stuff for the alr visible list */
     padding: 0.25em 5em;
     text-align: left;
 }
 
 .education .alt {color: var(--cafeconleche);}
 
-#showOrgs, #showCourses, #showSkills {cursor: pointer;}
-
-#studentOrgList > * {
+#studentOrgList > * { /* for the sublist about student organizations */
     font-size: 1.25em;
     padding: 0em 8em;
 }
 
-#studentOrgList li {
+#studentOrgList li { /* name of student org participated in */
     font-family: "Merriweather", serif;
     color: var(--cafe);
     font-weight: bold;
 }
 
-#studentOrgList p {
+#studentOrgList p { /* information about role in student org */
     color: var(--negro);
     padding: 0.5em 9em;
 }
 
-#studentOrgList .alt {
+#studentOrgList .alt { /* to highlight choronology of org involvement */
     font-weight: bold;
     color: var(--negro);
 }
 
-.standardList {
+.standardList { /* for the other sublists, revelant courses and revelant skills */
     font-family: "Merriweather", serif;
     color: var(--cafe);
     font-weight: bold;
@@ -160,18 +155,18 @@ img {
 
 /* ---------- Projects ---------- */
 
-.projectsList {width: 100%;}
+.projectsList {width: 100%;} /* for entire project section */
 .projectsList * {float: left;}
 
-.introproj {
+.introproj { /* title info for each project */
     width: 100%;
     background-color: var(--blanco);
     padding: 1.5em 1em;
 }
 
-.introproj:nth-of-type(1) {margin-top: 2em;}
+.introproj:nth-of-type(1) {margin-top: 2em;} /* extra buffer for the project on top, to even out spacing */
 
-.projectsList h1, h2 {
+.projectsList h1, h2 { /* for title text specifically in each project */
     width: 60%;
     text-decoration: none;
     text-align: center;
@@ -179,32 +174,31 @@ img {
     color: var(--verdeoscuro);
 }
 
-.projectsList h2 {
+.projectsList h2 {  /* specifically for info on where it was done */
     width: 40%;
     text-align: left;
 }
 
-.projectsList p {
+.projectsList p {  /* for project report */
     width: 100%;
     font-size: 1.25em;
     padding: 1em 0.75em 0.5em 0.75em;
 }
 
-.project {
-    /* padding: 2% 10vw; */
+.project { /* for container with project slideshow and report */
     margin: 0;
     margin-bottom: 2%;
     width: 100%;
     padding: 0 5em;
 }
 
-.slideshow {  /* the slideshow container */
+.slideshow {  /* slideshow container */
     width: 100%;
     height: 25vw;
     margin: 1.5em 0;
 }
 
-.slideshow .slides {display: none;}
+.slideshow .slides {display: none;} /* autohide slides initially */
 
 .slideshow img {  /* the image within the slideshow */
     position: absolute;
@@ -212,13 +206,13 @@ img {
     max-height: 25vw;
     object-fit: contain;
     align-self: center;
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-name: fade; /* adds fade effect to images in slideshow */
+    -webkit-animation-duration: 1s;
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
-.projectsList > h1 {
+.projectsList > h1 { /* intro to project section */
     width: 100%;
     padding: 1em;
     color: var(--negro);
@@ -234,18 +228,18 @@ img {
 
 /* ---------- Work ---------- */
 
-.work {width: 100%;}
+.work {width: 100%;} /* entire work/resume section */
 .work * {float: left;}
 
-.experience {
+.experience { /* each section of work experience */
     padding: 2% 10vw 0 10vw;
     width: 100%;
     background-color: var(--blanco);
 }
 
-.experience * {color: var(--verdeoscuro);}
+.experience * {color: var(--verdeoscuro);} /* color all text dark green */
 
-.experience h1 {
+.experience h1 { /* text with job title and company */
     width: 75%;
     text-decoration: none;
     text-align: left;
@@ -253,7 +247,7 @@ img {
     padding: 0.125em 0;
 }
 
-.experience h2 {
+.experience h2 { /* text with job duration */
     width: 25%;
     text-decoration: none;
     text-align: right;
@@ -261,7 +255,7 @@ img {
     padding: 0.5em 0;
 }
 
-.experience p {
+.experience p { /* job description */
     width: 95%;
     margin-left: 5%;
     text-decoration: none;
@@ -270,33 +264,33 @@ img {
     margin-top: 1em;
 }
 
-.experience span {
+.experience span { /* for light italicized text in job desc */
     font-style: italic;
     color: var(--cafeconleche);
 }
 
-.experience:nth-last-of-type(1) {
+.experience:nth-last-of-type(1) { /* adds extra buffer to even out space */
     padding-bottom: 2%;
 }
 
 /* ---------- About Me/Contact ---------- */
 
-.whoAmI {
+.whoAmI { /* for the entire about me and contact section */
     width: 100%;
     background-color: var(--verdeclaro);
     padding: 2em 0em;
     padding-bottom: 4em;
 }
 
-.whoAmI h1, .whoAmI h2 {
+.whoAmI h1, .whoAmI h2 { /* for larger font in section */
     width: 100%;
     color: var(--negro);
     padding: 0em 2em;
 }
 
-.whoAmI h2 {padding: 0.25em 5em; text-align: left;}
+.whoAmI h2 {padding: 0.25em 5em; text-align: left;} /* specifically for contact info list */
 
-.whoAmI p {
+.whoAmI p { /* description about myseld */
     font-size: 1.25em;
     padding: 1.5em 5em;
     float: left;
@@ -304,11 +298,11 @@ img {
     color: var(--negro);
 }
 
-.whoAmI a {text-decoration: none;}
+.whoAmI a {text-decoration: none;} /* hide link */
 
-.whoAmI .alt {color: var(--verdeoscuro);}
+.whoAmI .alt {color: var(--verdeoscuro);} /* add alternative dark green text */
 
-.slideshow.adaptive {
+.slideshow.adaptive { /* add extra formatting for gallery that turns into slideshow */
     display: flex;
     justify-content: center;
     gap: 1em;
@@ -318,14 +312,14 @@ img {
     height: 35vh;
 }
 
-.slidesAboutMe {
+.slidesAboutMe { /* to adjust each slide container */
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 30%;
     max-width: 30%;
 }
 
-.slidesAboutMe img {
+.slidesAboutMe img { /* to format image inside slide container */
     max-width: 30vw;
     max-height: 30vh;
     height: auto;
@@ -334,12 +328,12 @@ img {
 
 /* ---------- Gallery Section ---------- */
 
-.projectGallery {
+.projectGallery { /* for "view all photos" aka photo gallery */
     text-align: center;
     padding: 2em 5vw;
 }
 
-#toggleGallery {
+#toggleGallery { /* for "view all photos" button */
     padding: 0.75em 1.5em;
     font-size: 1.25em;
     font-family: "Merriweather", serif;
@@ -347,8 +341,6 @@ img {
     color: var(--blanco);
     cursor: pointer;
     transition: 0.25s;
-
-    
     position: absolute;
     margin-top: -2em;
     left: 50%;
@@ -356,14 +348,14 @@ img {
     transform: translateX(-50%);
 }
 
-.gallery {
+.gallery { /* for container with all photos */
     margin-top: 2em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 0.75em;
 }
 
-.galleryImage {
+.galleryImage { /* for individual each photo in gallery */
     width: 100%;
     height: auto;
     cursor: pointer;
@@ -372,7 +364,7 @@ img {
 
 /* ---------- Modal Styles ---------- */
 
-.modal {
+.modal { /* for container that holds enlarged image */
     display: flex;
     position: fixed;
     z-index: 10;
@@ -387,19 +379,19 @@ img {
     flex-direction: column;
 }
 
-.modal-content {
+.modal-content { /* to format image when clicked on, zooming it in */
     max-width: 90vw;
     max-height: 80vh;
     object-fit: contain;
 }
 
-#caption {
+#caption { /* to format caption inside alt text of image */
     color: white;
     padding: 1em;
     text-align: center;
 }
 
-#closeModal {
+#closeModal { /* to format "X" button when an image is enlarged */
     color: white;
     font-size: 3em;
     position: absolute;
@@ -408,8 +400,20 @@ img {
     cursor: pointer;
 }
 
-.hidden {
+.hidden { /* to hide content that will be displayed after javascript trigger */
     display: none;
+}
+
+/* ---------- Animations ---------- */
+
+@-webkit-keyframes fade { /* the animation for the slideshow photos for the special case browsers */
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fade { /* the animation for the slideshow photos */
+    from {opacity: 0;} 
+    to {opacity: 1;}
 }
 
 /* ---------- Media Queries: Tablet ---------- */
@@ -448,6 +452,7 @@ img {
     }
 
     .galleryImage:hover {
+        -ms-transform: scale(1.05);
         transform: scale(1.05);
     }
     
@@ -495,6 +500,7 @@ img {
     }
 
     .galleryImage:hover {
+        -ms-transform: scale(1.05);
         transform: scale(1.05);
     }
     
@@ -541,11 +547,13 @@ img {
 
     .slideshow img {max-width: 100%; max-height: 45vw; left: 0;}
 
-    .projectsList p {padding: 0.75em; padding-top: 0;}
+    .projectsList p {padding: 0.75em; padding-top: 0; width: 100%;}
 
     .projectsList > h1 {margin-top: 0.25em;}
 
     .projectsList > p {font-size: 1.25em; padding: 0em 10vw;}
+
+    .project {padding: 0 1.5em;}
 
     .project h2 {padding-top: 0;}
 
