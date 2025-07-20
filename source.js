@@ -30,11 +30,6 @@ document.getElementById("showProjectB").addEventListener("click", function () {
     this.textContent = project.classList.contains("hidden") ? " > Learn More (Show Project Report)" : " < Learn More (Hide Project Report)";
 });
 
-/* ----- show###() event click functions for mobile display only ----- */
-
-// add em
-
-
 /* ----- photo gallery of all projects ----- */
 
 document.getElementById("toggleGallery").addEventListener("click", function () {
