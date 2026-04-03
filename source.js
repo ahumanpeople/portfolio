@@ -1,54 +1,123 @@
-/* ----- show###() event click functions are text that triggers a dropdown ----- */
+/* =============================================
+   José Barrios Portfolio — Redesigned JS
+   ============================================= */
 
-document.getElementById("showCourses").addEventListener("click", function () {
-    const courseList = document.getElementById("courseList");
-    courseList.classList.toggle("hidden");
-    this.textContent = courseList.classList.contains("hidden") ? " > Revelant Courses Taken (Show)" : " < Revelant Courses Taken (Hide)";
+/* ---------- Accordion Toggles ---------- */
+
+function setupAccordion(triggerId, panelId) {
+    const trigger = document.getElementById(triggerId);
+    const panel = document.getElementById(panelId);
+    if (!trigger || !panel) return;
+
+    trigger.addEventListener("click", function () {
+        const isOpen = !panel.classList.contains("hidden");
+        panel.classList.toggle("hidden");
+        trigger.classList.toggle("open", !isOpen);
+    });
+}
+
+setupAccordion("showCourses", "courseList");
+setupAccordion("showSkills", "skillList");
+setupAccordion("showOrgs", "studentOrgList");
+
+/* ---------- Project Expand Buttons ---------- */
+
+function setupProjectToggle(btnId, panelId) {
+    const btn = document.getElementById(btnId);
+    const panel = document.getElementById(panelId);
+    if (!btn || !panel) return;
+
+    btn.addEventListener("click", function () {
+        const isOpen = !panel.classList.contains("hidden");
+        panel.classList.toggle("hidden");
+        btn.classList.toggle("open", !isOpen);
+        btn.innerHTML = isOpen
+            ? '<span class="expand-icon">▶</span> Learn More'
+            : '<span class="expand-icon" style="transform:rotate(90deg)">▶</span> Collapse';
+    });
+}
+
+setupProjectToggle("showProjectA", "projectA");
+setupProjectToggle("showProjectB", "projectB");
+setupProjectToggle("showProjectC", "projectC");
+setupProjectToggle("showProjectD", "projectD");
+
+/* ---------- Slideshows ---------- */
+
+function setupSlideshow(slideClass) {
+    const slides = document.querySelectorAll("." + slideClass);
+    if (!slides.length) return;
+
+    let index = 0;
+
+    function showSlide(i) {
+        slides.forEach(s => s.classList.remove("active"));
+        slides[i].classList.add("active");
+    }
+
+    showSlide(0);
+
+    setInterval(function () {
+        index = (index + 1) % slides.length;
+        showSlide(index);
+    }, 5000);
+}
+
+setupSlideshow("slidesA");
+setupSlideshow("slidesB");
+setupSlideshow("slidesC");
+setupSlideshow("slidesD");
+
+/* ---------- About Me Slideshow (responsive) ---------- */
+
+const aboutSlides = document.querySelectorAll(".slidesAboutMe");
+let aboutIndex = 0;
+let aboutTimer = null;
+const mobileBreak = window.matchMedia("(max-width: 768px)");
+
+function showAboutSlide(i) {
+    aboutSlides.forEach(s => s.classList.remove("active"));
+    if (aboutSlides[i]) aboutSlides[i].classList.add("active");
+}
+
+function runAboutSlideshow(mq) {
+    if (aboutTimer) {
+        clearTimeout(aboutTimer);
+        aboutTimer = null;
+    }
+
+    if (mq.matches) {
+        // Mobile: cycle one slide at a time
+        showAboutSlide(aboutIndex);
+        aboutTimer = setInterval(function () {
+            aboutIndex = (aboutIndex + 1) % aboutSlides.length;
+            showAboutSlide(aboutIndex);
+        }, 5000);
+    } else {
+        // Desktop/tablet: show all slides simultaneously (CSS handles layout)
+        clearInterval(aboutTimer);
+        aboutSlides.forEach(s => s.classList.add("active"));
+    }
+}
+
+runAboutSlideshow(mobileBreak);
+mobileBreak.addEventListener("change", function () {
+    aboutIndex = 0;
+    runAboutSlideshow(mobileBreak);
 });
 
-document.getElementById("showOrgs").addEventListener("click", function () {
-    const studentOrgList = document.getElementById("studentOrgList");
-    studentOrgList.classList.toggle("hidden");
-    this.textContent = studentOrgList.classList.contains("hidden") ? " > Student Organizations (Show)" : " < Student Organizations (Hide)";
-});
-
-document.getElementById("showSkills").addEventListener("click", function () {
-    const skillList = document.getElementById("skillList");
-    skillList.classList.toggle("hidden");
-    this.textContent = skillList.classList.contains("hidden") ? " > Revelant Skills (Show)" : " < Revelant Skills (Hide)";
-});
-
-document.getElementById("showProjectA").addEventListener("click", function () {
-    const project = document.getElementById("projectA");
-    project.classList.toggle("hidden");
-    this.textContent = project.classList.contains("hidden") ? " > Learn More (Show Project Report)" : " < Learn More (Hide Project Report)";
-});
-
-document.getElementById("showProjectB").addEventListener("click", function () {
-    const project = document.getElementById("projectB");
-    project.classList.toggle("hidden");
-    this.textContent = project.classList.contains("hidden") ? " > Learn More (Show Project Report)" : " < Learn More (Hide Project Report)";
-});
-
-/* ----- photo gallery of all projects ----- */
-
-document.getElementById("toggleGallery").addEventListener("click", function () {
-    const gallery = document.getElementById("gallery");
-    gallery.classList.toggle("hidden");
-    this.textContent = gallery.classList.contains("hidden") ? "View All Photos" : "Hide All Photos";
-});
+/* ---------- Image Modal ---------- */
 
 const modal = document.getElementById("imageModal");
 const modalImg = document.getElementById("modalImg");
 const captionText = document.getElementById("caption");
 
-document.querySelectorAll(".galleryImage").forEach(img => {
+document.querySelectorAll(".galleryImage").forEach(function (img) {
     img.addEventListener("click", function () {
         modal.classList.remove("hidden");
         modalImg.src = this.src;
+        modalImg.alt = this.alt;
         captionText.innerText = this.alt;
-        captionText.style.fontFamily = "Roboto";
-        captionText.style.fontSize = "1.25em";
     });
 });
 
@@ -56,71 +125,34 @@ document.getElementById("closeModal").addEventListener("click", function () {
     modal.classList.add("hidden");
 });
 
-/* ----- showSlides###() functions are for slideshows thoroughout webpage ----- */
-
-var slideIndexA = 0; // set up variables
-showSlidesA();
-
-function showSlidesA() {
-    var i;
-    var slides = document.getElementsByClassName("slidesA"); // select all slides within slideshow
-    
-    for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
-    slideIndexA++; // hide all pictures and begin count
-    if (slideIndexA > slides.length) {slideIndexA = 1;} // if count surpasses amount of pictures, reset count
-    slides[slideIndexA-1].style.display = "block";
-    setTimeout(showSlidesA, 5000); // select right picture and load on screen for 5 seconds
-}
-
-var slideIndexB = 0;
-showSlidesB();
-
-function showSlidesB() {
-    var i;
-    var slides = document.getElementsByClassName("slidesB");
-    
-    for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
-    slideIndexB++;
-    if (slideIndexB > slides.length) {slideIndexB = 1;}
-    slides[slideIndexB-1].style.display = "block";
-    setTimeout(showSlidesB, 5000);
-}
-
-/* ----- showSlides###() function for mobile display in About Me Section ----- */
-
-var aboutMeIndex = 0; // variables to set up showAboutMeSlides function
-var aboutMeTimeout;
-var viewport = window.matchMedia("(max-width: 768px)"); // set viewport threshold to 768px
-
-function showAboutMeSlides(viewport) {
-    const slides = document.getElementsByClassName("slidesAboutMe");
-    if (aboutMeTimeout) // resets function if program is timed out
-    {
-        clearTimeout(aboutMeTimeout);
-        aboutMeTimeout = null;
+// Also close modal on backdrop click
+modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+        modal.classList.add("hidden");
     }
-
-    if (viewport.matches) // if the viewport width is small (mobile)
-    {
-        for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
-        aboutMeIndex++; // hide all pictures and begin count
-
-        if (aboutMeIndex > slides.length) {aboutMeIndex = 1;} // if count surpasses amount of pictures, reset count
-        slides[aboutMeIndex-1].style.display = "block";
-        aboutMeTimeout = setTimeout(() => showAboutMeSlides(viewport), 5000); // select right picture and load on screen for 5 seconds
-    }
-    else
-    {
-        for (i = 0; i < slides.length; i++)
-        { // show all pictures
-            slides[i].style.display = "block";
-        }
-    }
-}
-
-showAboutMeSlides(viewport); // start function
-// update if viewport is resized
-viewport.addEventListener("change", function () {
-    aboutMeIndex = 0;
-    showAboutMeSlides(viewport);
 });
+
+// Close on Escape
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") modal.classList.add("hidden");
+});
+
+/* ---------- Active nav link on scroll ---------- */
+
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+            navLinks.forEach(function (link) {
+                link.style.color = "";
+                if (link.getAttribute("href") === "#" + entry.target.id) {
+                    link.style.color = "var(--accent)";
+                }
+            });
+        }
+    });
+}, { rootMargin: "-40% 0px -55% 0px" });
+
+sections.forEach(function (s) { observer.observe(s); });

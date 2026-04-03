@@ -1,250 +1,679 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <title>Jose Barrios | Academic & Work Portfolio</title>
+    <title>José Barrios | Engineering Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body lang="en-US">
-    <!-- https://html-preview.github.io/?url=https://github.com/ahumanpeople/portfolio/blob/main/index.html -->
-    <div class="navbar">
-        <a class="mobilehide" href="index.html" id="left">Hello!</a>
-        <div id="right">
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <a class="nav-brand mobilehide" href="#top">jbarrios<span class="accent">.tech</span></a>
+        <div class="nav-links" id="right">
             <a href="#eduPage">Education</a>
             <a href="#projPage">Projects</a>
-            <a href="#toggleGallery">Work</a>
-            <a class="mobilehide" href="#aboutPage">About Me</a>
+            <a href="#workPage">Experience</a>
+            <a class="mobilehide" href="#aboutPage">About</a>
             <a href="#contactPage">Contact</a>
         </div>
-    </div>
+    </nav>
 
-    <div class="intro">
-        <h1>Hello, my name is Jos&eacute;!</h1>
-        <p id="eduPage">Please take your time to look through my academic portfolio or my work history to learn more about me and my career.</p>
-    </div>
-
-    <div class="education">
-
-        <h1>I am pursuing a B.S. degree in Mechanical Engineering <span class="alt">* with a minor in Electrical Engineering</span></h1>
-        <h2> > Start Date: August 2022</h2>
-
-        <h2 id="showCourses"> > Revelant Courses Taken (Show)</h2>
-        <ul class="hidden standardList" id="courseList">
-            <!-- <li>> Robot Controls</li>
-            <li>> Design with Microprocessors</li>
-            <li>> Thermal Power Systems</li> -->
-            <li>> Control Systems</li>
-            <li>> Heat Transfer</li>
-            <li>> Intro to Solidworks</li>
-            <li>> Mechanics of Fluids</li>
-            <li>> Materials and Manufacturing Processes</li>
-            <li>> Mechanics of Solids</li>
-            <li>> System Dynamics and Vibration</li>
-            <li>> Engineering Thermodynamics</li>
-            <li>> Intro to Microcontrollers</li>
-            <li>> Electromechanical Systems</li>
-            <li>> Intro to MATLAB</li>
-            <li>> Fundamentals of Circuits</li>
-        </ul>
-
-        <h2 id="showOrgs"> > Student Organizations (Show)</h2>
-        <ul class="hidden" id="studentOrgList">
-            <li>> American Society of Mechanical Engineers (ASME)</li>
-            <p>
-                <span class="alt">Member (January 2023 to May 2024) > Co-President (May 2024 to Present)</span>
-                <br><br>
-                As co-president of the ASME student chapter at San Francisco State, myself alongside our team of officers have been leading a couple of new initiatives to provide a diverse range of opportunities and events for engineering students at our university. We have massively increased outreaching and canvassing efforts on campus, resulting in increasing our membership numbers by more than double and maintaining high attendance for all of our events, regardless of their nature. Alongside this, we have led a more collaborative direction between student-led clubs on campus, as well as prioritizing community via hosting social events, creating a more active and interconnected environment for engineering students. Additionally, we’ve hosted a variety of different workshops and info sessions, inviting a diverse pool of companies to appease the wide interests of our student body.
-            </p>
-            <li>> American Society of Civil Engineers (ASCE)</li>
-            <p>
-                <span class="alt">Member (January 2023 to May 2024) > Outreach Officer (May 2024 to May 2025) > Member (May 2025 to Present)</span>
-                <br><br>
-                As one of the outreach officers for the ASCE student chapter at San Francisco State, we prioritized reaching out to as many civil-related companies as possible to provide students with a variety of companies in different industries within the field for our school’s semiannual engineering career fair. I also helped maintain good relations with these companies, inviting top engineering firms such as McCarthy, PG&E, and DPR Construction to our campus for company info sessions. Additionally, we have been currently working with UC Berkeley to host the Mid-Pacific ASCE Student Symposium for April 2025, which involves contacting potential judges and communicating with other ASCE chapters.
-            </p>
-            <li>> Tau Beta Pi (<span style="font-weight: 200;">&Tau;&Beta;&Pi;</span>) Engineering Society</li>
-            <p><span class="alt">Member (May 2025 to Present)</span></p>
-            <li>> National Society of Black Engineers (NSBE)</li>
-            <p><span class="alt">Member (January 2025 to Present)</span></p>
-            <li>> Society of Hispanic Professional Engineers (SHPE)</li>
-            <p><span class="alt">Member (January 2023 to Present)</span></p>
-            <li>> Mathematics, Engineering, Science Achievement (MESA) Program</li>
-            <p><span class="alt">Member (January 2023 to Present)</span></p>
-            <li>> Educational Opportunity Program (EOP)</li>
-            <p><span class="alt">Member (August 2022 to Present)</span></p>
-        </ul>
-
-        <h2 id="showSkills"> > Revelant Skills (Show)</h2>
-        <ul class="hidden standardList" id="skillList">
-            <li>> Solidworks</li>
-            <li>> AutoCAD</li>
-            <li>> MATLAB</li>
-            <li>> Simulink</li>
-            <li>> Python</li>
-            <li>> PSpice</li>
-            <li>> HTML</li>
-            <li>> CSS</li>
-            <li>> Javascript</li>
-            <li>> Microsoft Office</li>
-        </ul>
-
-        <h2 id="projPage"> > Graduation Date: December 2026 <span class="alt">* Projected Date</span></h2>
-
-    </div>
-
-    <div class="projectsList">
-
-        <h1>Now here are some of the projects I've worked on in my academic career!</h1>
-        <p>Make sure to click "Learn More" to get more information on each project, and check out the photo gallery for all of my projects using the button at the bottom of this list.</p>
-
-        <div class="introproj">
-            <h1>Autonomous Drone CAD Project</h1>
-            <h2>Intro to Solidworks @ SFSU</h2>
-        </div>
-        <div class="project">
-            <div class="slideshow container" onload="showSlidesA()">
-
-                <div class="slidesA"><img src="images/cad_drone_project/Assembly_One_JoseBarrios.PNG" alt="Image of autonomous drone assembly, all made in Solidworks"></div>
-                <div class="slidesA"><img src="images/cad_drone_project/Brushless_DC_Motor_JoseBarrios.PNG" alt="Image of brushless DC servo motor for the gripper assembly, commercially available"></div>
-                <div class="slidesA"><img src="images/cad_drone_project/Gripper_Assembly_JoseBarrios.PNG" alt="Image of gripper assembly, a custom-made claw to pick up a one inch by one inch by one inch cube"></div>
-                <div class="slidesA"><img src="images/cad_drone_project/Assembly_Two_JoseBarrios.PNG" alt="Second image of autonomous drone assembly"></div>
-                <div class="slidesA"><img src="images/cad_drone_project/Exploded_Gripper_Assembly_JoseBarrios.PNG" alt="Exploded view of gripper assembly"></div>
-                <div class="slidesA"><img src="images/cad_drone_project/Jose_Barrios_GripperAssembly.png" alt="CAD mechanical drawing for the gripper assembly"></div>
-                <div class="slidesA"><img src="images/cad_drone_project/Jose_Barrios_GripperCage.png" alt="CAD mechanical drawing for the claw housing"></div>
-                <div class="slidesA"><img src="images/cad_drone_project/Propeller_JoseBarrios.PNG" alt="Custom-made propeller with self-designed airfoil"></div>
-
-            </div>
-            <h2 id="showProjectA"> > Learn More (Show Project Report)</h2>
-            <p id="projectA" class="hidden">
-                (Designed in Solidworks) Lorem ipsum dolor sit amet, alii fuisset qui an, cu sea impedit consectetuer. Eam no altera inermis, iudico comprehensam an vim. Ad luptatum evertitur qui. Ex vix justo quaeque invidunt. Veniam petentium concludaturque ut sed, tollit lobortis vituperata te vix.
-                Eu fuisset qualisque elaboraret est, qui ex debitis appetere. Quo officiis adipisci cu. An dolorem detraxit scribentur per, ne adhuc dolore consetetur vel. Id case elaboraret accommodare duo, has ut amet insolens. Ut unum honestatis referrentur duo, augue hendrerit abhorreant has ut.
-                Te falli adipisci volutpat has. Ex eius simul adolescens eos, dicit dolore molestie est id, legere scripserit id sit. Ea nam eius consequuntur. Te munere mucius sea. Nam malis dicit minimum ea. Ex mutat admodum pro, nec eu dicunt mediocrem deseruisse.
-                Usu unum inimicus percipitur id, velit electram cu ius, sea at nihil denique dolores. Cibo fugit sonet eam ne. Et invidunt qualisque adipiscing has, mei alia vivendo ne. Ridens epicurei tincidunt ne duo. Dicat maluisset ut qui, postea menandri in per. Partem atomorum vix ei, vel aperiri splendide ad.
-            </p>
-        </div>
-
-        <div class="introproj">
-            <h1>Screwdriver Gearbox CAD Project</h1>
-            <h2>Engineering Graphics @ SFSU</h2>
-        </div>
-        <div class="project">
-            <div class="slideshow container" onload="showSlidesB()">
-
-                <div class="slidesB"><img src="images/gearbox_cad_project/Gearbox_Layout.png" alt="CAD mechanical drawing for the gearbox assembly"></div>
-
-            </div>
-            <h2 id="showProjectB"> > Learn More (Show Project Report)</h2>
-            <p id="projectB" class="hidden">
-                (Designed in AutoCAD) Lorem ipsum dolor sit amet, alii fuisset qui an, cu sea impedit consectetuer. Eam no altera inermis, iudico comprehensam an vim. Ad luptatum evertitur qui. Ex vix justo quaeque invidunt. Veniam petentium concludaturque ut sed, tollit lobortis vituperata te vix.
-                Eu fuisset qualisque elaboraret est, qui ex debitis appetere. Quo officiis adipisci cu. An dolorem detraxit scribentur per, ne adhuc dolore consetetur vel. Id case elaboraret accommodare duo, has ut amet insolens. Ut unum honestatis referrentur duo, augue hendrerit abhorreant has ut.
-                Te falli adipisci volutpat has. Ex eius simul adolescens eos, dicit dolore molestie est id, legere scripserit id sit. Ea nam eius consequuntur. Te munere mucius sea. Nam malis dicit minimum ea. Ex mutat admodum pro, nec eu dicunt mediocrem deseruisse.
-                Usu unum inimicus percipitur id, velit electram cu ius, sea at nihil denique dolores. Cibo fugit sonet eam ne. Et invidunt qualisque adipiscing has, mei alia vivendo ne. Ridens epicurei tincidunt ne duo. Dicat maluisset ut qui, postea menandri in per. Partem atomorum vix ei, vel aperiri splendide ad.
-            </p>
-        </div>
-
-        <div class="projectGallery">
-            <button id="toggleGallery">View All Photos</button>
-            <div id="gallery" class="gallery hidden">
-
-                <img src="images/cad_drone_project/Assembly_One_JoseBarrios.PNG" class="galleryImage" alt="Image of autonomous drone assembly, all made in Solidworks">
-                <img src="images/cad_drone_project/Brushless_DC_Motor_JoseBarrios.PNG" class="galleryImage" alt="Image of brushless DC servo motor for the gripper assembly, commercially available">
-                <img src="images/cad_drone_project/Gripper_Assembly_JoseBarrios.PNG" class="galleryImage" alt="Image of gripper assembly, a custom-made claw to pick up a one inch by one inch by one inch cube">
-                <img src="images/cad_drone_project/Assembly_Two_JoseBarrios.PNG" class="galleryImage" alt="Second image of autonomous drone assembly">
-                <img src="images/cad_drone_project/Exploded_Gripper_Assembly_JoseBarrios.PNG" class="galleryImage" alt="Exploded view of gripper assembly">
-                <img src="images/cad_drone_project/Jose_Barrios_GripperAssembly.png" class="galleryImage" alt="CAD mechanical drawing for the gripper assembly">
-                <img src="images/cad_drone_project/Jose_Barrios_GripperCage.png" class="galleryImage" alt="CAD mechanical drawing for the claw housing">
-                <img src="images/cad_drone_project/Propeller_JoseBarrios.PNG" class="galleryImage" alt="Custom-made propeller with self-designed airfoil">
-                <img src="images/gearbox_cad_project/Gearbox_Layout.png" class="galleryImage" alt="CAD mechanical drawing for the gearbox assembly">
-
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="top">
+        <div class="hero-inner">
+            <div class="hero-label">Mechanical Engineering Student · SFSU</div>
+            <h1 class="hero-title">Hello, I'm <span class="accent">José</span>.</h1>
+            <p class="hero-sub">Engineering student passionate about robotics, automation, and advanced manufacturing. Explore my academic portfolio and work history below.</p>
+            <div class="hero-cta">
+                <a href="#projPage" class="btn-primary">View Projects</a>
+                <a href="https://drive.google.com/file/d/1X2QpanJcPCVHrRV5q0QuKVCz17uiU7VJ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-ghost">Open Resume ↗</a>
             </div>
         </div>
-        <div id="imageModal" class="modal hidden">
-            <span id="closeModal">&times;</span>
-            <img class="modal-content" id="modalImg">
-            <div id="caption"></div>
+        <div class="hero-badge">
+            <span class="badge-line">B.S. Mechanical Engineering</span>
+            <span class="badge-line">Minor in Electrical Engineering</span>
+            <span class="badge-line accent">GPA: 3.58</span>
         </div>
+    </section>
 
+    <!-- ===== EDUCATION ===== -->
+    <section class="section" id="eduPage">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-tag">01 / Education</span>
+                <h2>Academic Background</h2>
+            </div>
+
+            <div class="edu-card">
+                <div class="edu-card-top">
+                    <div>
+                        <div class="edu-institution">San Francisco State University</div>
+                        <div class="edu-degree">B.S. Mechanical Engineering <span class="accent">· Minor in Electrical Engineering</span></div>
+                    </div>
+                    <div class="edu-dates">Aug 2022 – Dec 2026*</div>
+                </div>
+                <div class="edu-meta">
+                    <span class="chip">GPA 3.58</span>
+                    <span class="chip">Tau Beta Pi</span>
+                    <span class="chip">ASME Co-President</span>
+                    <span class="chip">Gilead Research Fellow</span>
+                </div>
+            </div>
+
+            <!-- Courses -->
+            <div class="accordion-block">
+                <button class="accordion-trigger" id="showCourses">
+                    <span class="acc-icon">▶</span>
+                    <span>Relevant Courses Taken</span>
+                </button>
+                <div class="accordion-panel hidden" id="courseList">
+                    <div class="tag-grid">
+                        <span class="tag">Robot Controls</span>
+                        <span class="tag">Design with Microprocessors</span>
+                        <span class="tag">Thermal Power Systems</span>
+                        <span class="tag">Microelectronics</span>
+                        <span class="tag">Control Systems</span>
+                        <span class="tag">Heat Transfer</span>
+                        <span class="tag">Intro to Solidworks</span>
+                        <span class="tag">Mechanics of Fluids</span>
+                        <span class="tag">Materials &amp; Manufacturing Processes</span>
+                        <span class="tag">Mechanics of Solids</span>
+                        <span class="tag">System Dynamics &amp; Vibration</span>
+                        <span class="tag">Engineering Thermodynamics</span>
+                        <span class="tag">Intro to Microcontrollers</span>
+                        <span class="tag">Electromechanical Systems</span>
+                        <span class="tag">Intro to MATLAB</span>
+                        <span class="tag">Fundamentals of Circuits</span>
+                        <span class="tag">Mechatronics</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="accordion-block">
+                <button class="accordion-trigger" id="showSkills">
+                    <span class="acc-icon">▶</span>
+                    <span>Technical Skills</span>
+                </button>
+                <div class="accordion-panel hidden" id="skillList">
+                    <div class="skill-groups">
+                        <div class="skill-group">
+                            <div class="skill-group-label">CAD / Simulation</div>
+                            <div class="tag-grid">
+                                <span class="tag">Solidworks</span>
+                                <span class="tag">AutoCAD</span>
+                                <span class="tag">Fusion360</span>
+                                <span class="tag">Onshape</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <div class="skill-group-label">Programming</div>
+                            <div class="tag-grid">
+                                <span class="tag">MATLAB / Simulink</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">C / C++</span>
+                                <span class="tag">HTML / CSS / JS</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <div class="skill-group-label">Fabrication</div>
+                            <div class="tag-grid">
+                                <span class="tag">3D Printing</span>
+                                <span class="tag">Laser Cutting</span>
+                                <span class="tag">CNC Machining</span>
+                                <span class="tag">Soldering</span>
+                                <span class="tag">Hand Tools</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <div class="skill-group-label">Electronics</div>
+                            <div class="tag-grid">
+                                <span class="tag">Arduino / STM32</span>
+                                <span class="tag">PSpice</span>
+                                <span class="tag">STM32CubeIDE</span>
+                                <span class="tag">TinkerCAD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Orgs -->
+            <div class="accordion-block">
+                <button class="accordion-trigger" id="showOrgs">
+                    <span class="acc-icon">▶</span>
+                    <span>Student Organizations</span>
+                </button>
+                <div class="accordion-panel hidden" id="studentOrgList">
+                    <div class="org-list">
+
+                        <div class="org-item">
+                            <div class="org-header">
+                                <div class="org-name">American Society of Mechanical Engineers (ASME)</div>
+                                <div class="org-role accent">Co-President · May 2024 – Present</div>
+                            </div>
+                            <p class="org-desc">As co-president of the ASME chapter at SFSU, I've led new initiatives to provide a diverse range of opportunities and events for engineering students. We more than doubled membership and maintained high attendance across all events. I also directed collaborative efforts between student clubs and hosted workshops inviting companies across industries.</p>
+                        </div>
+
+                        <div class="org-item">
+                            <div class="org-header">
+                                <div class="org-name">American Society of Civil Engineers (ASCE)</div>
+                                <div class="org-role accent">Outreach Officer · May 2024 – May 2025</div>
+                            </div>
+                            <p class="org-desc">Outreached to 100+ civil-related companies for the semiannual engineering career fair, maintained relationships with top firms like McCarthy, PG&amp;E, and DPR Construction, and collaborated with UC Berkeley for the Mid-Pacific ASCE Student Symposium.</p>
+                        </div>
+
+                        <div class="org-item">
+                            <div class="org-header">
+                                <div class="org-name">Tau Beta Pi (ΤΒΠ) Engineering Honor Society</div>
+                                <div class="org-role">Member · May 2025 – Present</div>
+                            </div>
+                        </div>
+
+                        <div class="org-item">
+                            <div class="org-header">
+                                <div class="org-name">National Society of Black Engineers (NSBE)</div>
+                                <div class="org-role">Member · Jan 2025 – Present</div>
+                            </div>
+                        </div>
+
+                        <div class="org-item">
+                            <div class="org-header">
+                                <div class="org-name">Society of Hispanic Professional Engineers (SHPE)</div>
+                                <div class="org-role">Member · Jan 2023 – Present</div>
+                            </div>
+                        </div>
+
+                        <div class="org-item">
+                            <div class="org-header">
+                                <div class="org-name">Mathematics, Engineering, Science Achievement (MESA)</div>
+                                <div class="org-role">Member · Jan 2023 – Present</div>
+                            </div>
+                        </div>
+
+                        <div class="org-item">
+                            <div class="org-header">
+                                <div class="org-name">Educational Opportunity Program (EOP)</div>
+                                <div class="org-role">Member · Aug 2022 – Present</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section section-alt" id="projPage">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-tag">02 / Projects</span>
+                <h2>Project Portfolio</h2>
+                <p class="section-desc">A selection of engineering projects from my academic career. Click a card to explore full details and project gallery.</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project A: Drone -->
+                <div class="project-card">
+                    <div class="project-slideshow">
+                        <div class="slide-container" id="slideshowA">
+                            <img class="slidesA" src="images/cad_drone_project/Assembly_One_JoseBarrios.PNG" alt="Autonomous drone assembly in Solidworks">
+                            <img class="slidesA" src="images/cad_drone_project/Brushless_DC_Motor_JoseBarrios.PNG" alt="Brushless DC servo motor">
+                            <img class="slidesA" src="images/cad_drone_project/Gripper_Assembly_JoseBarrios.PNG" alt="Gripper assembly CAD">
+                            <img class="slidesA" src="images/cad_drone_project/Assembly_Two_JoseBarrios.PNG" alt="Drone assembly view 2">
+                            <img class="slidesA" src="images/cad_drone_project/Exploded_Gripper_Assembly_JoseBarrios.PNG" alt="Exploded gripper view">
+                            <img class="slidesA" src="images/cad_drone_project/Jose_Barrios_GripperAssembly.png" alt="Gripper mechanical drawing">
+                            <img class="slidesA" src="images/cad_drone_project/Jose_Barrios_GripperCage.png" alt="Gripper cage drawing">
+                            <img class="slidesA" src="images/cad_drone_project/Propeller_JoseBarrios.PNG" alt="Custom propeller">
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-course">Intro to Solidworks · SFSU</span>
+                        </div>
+                        <h3 class="project-title">Autonomous Drone CAD Project</h3>
+                        <p class="project-summary">Designed a fully-constrained quadrotor drone in Solidworks, including a custom-designed servo-driven gripper mechanism from scratch — modeled with assembly drawings suitable for machining.</p>
+                        <div class="project-skills">
+                            <span class="skill-chip">Solidworks</span>
+                            <span class="skill-chip">Assembly Design</span>
+                            <span class="skill-chip">CAD Drawings</span>
+                            <span class="skill-chip">BOM</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <button class="project-expand-btn" id="showProjectA">
+                            <span class="expand-icon">▶</span> Learn More
+                        </button>
+                    </div>
+                    <div class="project-expanded hidden" id="projectA">
+                        <div class="expanded-content">
+                            <p>This was the final project for my Intro to Solidworks course, where the objective was to design a quadrotor drone using 3D-printed material, with all parts modeled in Solidworks from scratch (except imported McMasterCarr parts). The project subject came from the challenge of reverse engineering a mock quad drone for an ASME IAM3D competition.</p>
+                            <ul class="proj-req-list">
+                                <li>Max volume of 250 × 250 × 250 mm</li>
+                                <li>Ease of assembly and easy repairability</li>
+                                <li>All components neatly attached to the final assembly</li>
+                                <li>Mechanism to pick up and set down a 1 × 1 × 1 in cube</li>
+                            </ul>
+                            <p>The gripper mechanism was ideated and designed from scratch using a simple servo motor. Generated BOM, assembly drawings, an exploded view animation, and a propeller motion video.</p>
+                            <div class="expanded-links">
+                                <a class="link-btn" href="documents/Jose_Barrios_Gripper.pdf" target="_blank" rel="noopener noreferrer">↓ Gripper Assembly Drawings</a>
+                            </div>
+                            <!-- Project Gallery -->
+                            <div class="proj-gallery" id="galleryA">
+                                <img src="images/cad_drone_project/Assembly_One_JoseBarrios.PNG" class="galleryImage" alt="Autonomous drone assembly in Solidworks">
+                                <img src="images/cad_drone_project/Brushless_DC_Motor_JoseBarrios.PNG" class="galleryImage" alt="Brushless DC servo motor">
+                                <img src="images/cad_drone_project/Gripper_Assembly_JoseBarrios.PNG" class="galleryImage" alt="Gripper assembly">
+                                <img src="images/cad_drone_project/Assembly_Two_JoseBarrios.PNG" class="galleryImage" alt="Drone assembly view 2">
+                                <img src="images/cad_drone_project/Exploded_Gripper_Assembly_JoseBarrios.PNG" class="galleryImage" alt="Exploded gripper view">
+                                <img src="images/cad_drone_project/Jose_Barrios_GripperAssembly.png" class="galleryImage" alt="Gripper mechanical drawing">
+                                <img src="images/cad_drone_project/Jose_Barrios_GripperCage.png" class="galleryImage" alt="Gripper cage drawing">
+                                <img src="images/cad_drone_project/Propeller_JoseBarrios.PNG" class="galleryImage" alt="Custom propeller">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project B: Disc Brake -->
+                <div class="project-card">
+                    <div class="project-slideshow">
+                        <div class="slide-container" id="slideshowB">
+                            <img class="slidesB" src="images/heat_transfer_report/report_screenshot1.png" alt="Disc brake report screenshot">
+                            <img class="slidesB" src="images/heat_transfer_report/disc_noholes_casei.jpeg" alt="Case I simulation non-perforated disc">
+                            <img class="slidesB" src="images/heat_transfer_report/disc_noholes_caseii.jpeg" alt="Case II simulation non-perforated disc">
+                            <img class="slidesB" src="images/heat_transfer_report/disc_noholes_caseiii.jpeg" alt="Case III simulation non-perforated disc">
+                            <img class="slidesB" src="images/heat_transfer_report/disc_noholes_image.jpeg" alt="STL model no perforations">
+                            <img class="slidesB" src="images/heat_transfer_report/report_screenshot2.png" alt="Report screenshot 2">
+                            <img class="slidesB" src="images/heat_transfer_report/disc_withholes_caseiii.jpeg" alt="Case III perforated disc">
+                            <img class="slidesB" src="images/heat_transfer_report/disc_noholes_matlab_results.jpeg" alt="MATLAB output data">
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-course">Heat Transfer · SFSU</span>
+                        </div>
+                        <h3 class="project-title">Transient Thermal Analysis of a Disc Brake</h3>
+                        <p class="project-summary">Compared thermal behavior of perforated vs. solid disc brakes using MATLAB simulations under three braking cases, investigating the impact of design choices and ambient conditions on performance and brake fade.</p>
+                        <div class="project-skills">
+                            <span class="skill-chip">MATLAB</span>
+                            <span class="skill-chip">Solidworks</span>
+                            <span class="skill-chip">Thermal Analysis</span>
+                            <span class="skill-chip">STL Modeling</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <button class="project-expand-btn" id="showProjectB">
+                            <span class="expand-icon">▶</span> Learn More
+                        </button>
+                    </div>
+                    <div class="project-expanded hidden" id="projectB">
+                        <div class="expanded-content">
+                            <p>This project tackled transient thermal behavior by predicting and simulating the behavior of disc brakes under different braking conditions. Our study compared a perforated disc brake with a solid disc brake to observe how design choices affect maximum temperature, cooling distribution, and overall efficiency.</p>
+                            <ul class="proj-req-list">
+                                <li><strong>Case I:</strong> Constant power applied using circular brake pads</li>
+                                <li><strong>Case II:</strong> Linearly decreasing power using ring-shaped brake pads</li>
+                                <li><strong>Case III:</strong> Linearly decreasing power using circular brake pads</li>
+                            </ul>
+                            <p>Results showed the perforated disc achieved more even cooling distribution but reached higher max temperatures due to reduced conductive area. A parametric study revealed higher ambient temperatures increase brake fade risk, while colder/wet conditions enhance cooling but reduce friction.</p>
+                            <div class="proj-gallery" id="galleryB">
+                                <img src="images/heat_transfer_report/report_screenshot1.png" class="galleryImage" alt="Report screenshot 1">
+                                <img src="images/heat_transfer_report/disc_noholes_casei.jpeg" class="galleryImage" alt="Case I simulation">
+                                <img src="images/heat_transfer_report/disc_noholes_caseii.jpeg" class="galleryImage" alt="Case II simulation">
+                                <img src="images/heat_transfer_report/disc_noholes_caseiii.jpeg" class="galleryImage" alt="Case III simulation">
+                                <img src="images/heat_transfer_report/disc_noholes_image.jpeg" class="galleryImage" alt="STL disc model">
+                                <img src="images/heat_transfer_report/report_screenshot2.png" class="galleryImage" alt="Report screenshot 2">
+                                <img src="images/heat_transfer_report/disc_withholes_caseiii.jpeg" class="galleryImage" alt="Perforated disc Case III">
+                                <img src="images/heat_transfer_report/disc_noholes_matlab_results.jpeg" class="galleryImage" alt="MATLAB results">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project C: Kettle -->
+                <div class="project-card">
+                    <div class="project-slideshow">
+                        <div class="slide-container" id="slideshowC">
+                            <img class="slidesC" src="images/electric_kettle_project/kettle_schematic.jpg" alt="Hand-drawn electric schematic">
+                            <img class="slidesC" src="images/electric_kettle_project/kettle_arduino_circuit.png" alt="TinkerCAD schematic simulation">
+                            <img class="slidesC" src="images/electric_kettle_project/kettleLid_v3.2.png" class="galleryImage" alt="Kettle lid housing bottom view">
+                            <img class="slidesC" src="images/electric_kettle_project/kettleLid_v3.png" alt="Kettle lid housing isometric view">
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-course">Intro to Microcontrollers · SFSU</span>
+                        </div>
+                        <h3 class="project-title">Smart Electric Kettle Attachment</h3>
+                        <p class="project-summary">Designed and built a microcontroller-based kettle attachment with a temperature probe, control buttons, and RGB LED — all housed in a custom 3D-printed lid modeled in Fusion360 to fit an existing stovetop kettle.</p>
+                        <div class="project-skills">
+                            <span class="skill-chip">Arduino (C++)</span>
+                            <span class="skill-chip">Fusion360</span>
+                            <span class="skill-chip">TinkerCAD</span>
+                            <span class="skill-chip">3D Printing</span>
+                            <span class="skill-chip">Electronics</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <button class="project-expand-btn" id="showProjectC">
+                            <span class="expand-icon">▶</span> Learn More
+                        </button>
+                    </div>
+                    <div class="project-expanded hidden" id="projectC">
+                        <div class="expanded-content">
+                            <p>This was the final project for my Intro to Microcontrollers course — an opportunity to create a device that solved a real problem. My attachment replaces the stovetop kettle lid with a smart device that lets the user set a target temperature (depending on the drink desired) and alerts them via RGB LED when reached.</p>
+                            <p>Originally planned as a drip coffee machine, repeated hardware failures (broken heating element, nonfunctional water sensor) prompted a pivot. The final device uses a DS18B20 temperature sensor, control buttons, RGB LED, and an Elegoo UNO R3, all housed in a Fusion360-designed, PLA-printed case perfectly sized to the original kettle lid.</p>
+                            <div class="expanded-links">
+                                <a class="link-btn" href="documents/ENGR 294-01 Final Project.pdf" target="_blank" rel="noopener noreferrer">↓ Final Project Report</a>
+                                <a class="link-btn" href="documents/ENGR 294-01 Final Presentation.pdf" target="_blank" rel="noopener noreferrer">↓ Presentation Slides</a>
+                            </div>
+                            <div class="proj-gallery" id="galleryC">
+                                <img src="images/electric_kettle_project/kettle_schematic.jpg" class="galleryImage" alt="Hand-drawn schematic">
+                                <img src="images/electric_kettle_project/kettle_arduino_circuit.png" class="galleryImage" alt="TinkerCAD simulation">
+                                <img src="images/electric_kettle_project/kettleLid_v3.2.png" class="galleryImage" alt="Kettle lid bottom view">
+                                <img src="images/electric_kettle_project/kettleLid_v3.png" class="galleryImage" alt="Kettle lid isometric">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project D: Gearbox -->
+                <div class="project-card">
+                    <div class="project-slideshow">
+                        <div class="slide-container" id="slideshowD">
+                            <img class="slidesD" src="images/gearbox_cad_project/Gearbox_Layout.png" alt="CAD mechanical drawing for the gearbox assembly">
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-course">Engineering Graphics · SFSU</span>
+                        </div>
+                        <h3 class="project-title">Screwdriver Gearbox CAD Project</h3>
+                        <p class="project-summary">Recreated the gearbox of an electric screwdriver in AutoCAD — the most complex component in the group project — including fully-detailed assembly drawings, exploded views, orthogonal projections, section views, and a Bill of Materials.</p>
+                        <div class="project-skills">
+                            <span class="skill-chip">AutoCAD</span>
+                            <span class="skill-chip">GD&amp;T</span>
+                            <span class="skill-chip">Technical Drawing</span>
+                            <span class="skill-chip">BOM</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <button class="project-expand-btn" id="showProjectD">
+                            <span class="expand-icon">▶</span> Learn More
+                        </button>
+                    </div>
+                    <div class="project-expanded hidden" id="projectD">
+                        <div class="expanded-content">
+                            <p>This was the first project of my engineering career, completed during my first semester in Engineering Graphics. The final project challenged us to recreate a tool or appliance in AutoCAD. My group chose an electric screwdriver, and I handled the most intricate component: the gearbox.</p>
+                            <ul class="proj-req-list">
+                                <li>Fully assembled model</li>
+                                <li>Exploded view with numbered callouts</li>
+                                <li>Bill of Materials (part number, material, description, quantity)</li>
+                                <li>Three orthogonal views (Front, Top, Right Side)</li>
+                                <li>One section view</li>
+                            </ul>
+                            <p>Practiced designing and dimensioning parts from hand-drawn sketches to full AutoCAD assemblies with manufacturing-ready dimensions, tolerancing, and GD&amp;T callouts.</p>
+                            <div class="proj-gallery" id="galleryD">
+                                <img src="images/gearbox_cad_project/Gearbox_Layout.png" class="galleryImage" alt="Gearbox mechanical drawing">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- end projects-grid -->
+
+        </div>
+    </section>
+
+    <!-- ===== WORK EXPERIENCE ===== -->
+    <section class="section" id="workPage">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-tag">03 / Experience</span>
+                <h2>Work History</h2>
+                <div class="resume-link-wrap">
+                    <a id="openResume" href="https://drive.google.com/file/d/1X2QpanJcPCVHrRV5q0QuKVCz17uiU7VJ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-primary">View Full Resume ↗</a>
+                </div>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="tl-header">
+                            <div>
+                                <div class="tl-title">Machine Shop Student Assistant</div>
+                                <div class="tl-org">San Francisco State University</div>
+                            </div>
+                            <div class="tl-date">09/2025 – Present</div>
+                        </div>
+                        <p class="tl-desc">Training in machine shop tools and equipment, assisting capstone and build teams in prototyping at the newly-opened makerspace in SEIC 120. <em>Paired with research position via the Gilead Foundation.</em></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="tl-header">
+                            <div>
+                                <div class="tl-title">Student Research Assistant — CARE Lab</div>
+                                <div class="tl-org">San Francisco State University · Dr. David Quintero</div>
+                            </div>
+                            <div class="tl-date">09/2025 – Present</div>
+                        </div>
+                        <p class="tl-desc">Creating a prototype insole to house force pressure sensors for the Smart Shoe-Insole Project — a wearable device aiding rehabilitation of patients with neurological disorders, using Solidworks and 3D printing. <em>Paid research position funded by the Gilead Foundation.</em></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="tl-header">
+                            <div>
+                                <div class="tl-title">Mechanical Engineering Tutor</div>
+                                <div class="tl-org">Engineering Success Center · SFSU</div>
+                            </div>
+                            <div class="tl-date">09/2025 – Present</div>
+                        </div>
+                        <p class="tl-desc">Drop-in tutoring for most M.E. undergraduate courses; coordinate late-night assistance sessions with fellow tutors via Discord.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="tl-header">
+                            <div>
+                                <div class="tl-title">Special Needs Tutor</div>
+                                <div class="tl-org">Tutor Me Education · High Impact Education, LLC</div>
+                            </div>
+                            <div class="tl-date">06/2025 – 12/2025</div>
+                        </div>
+                        <p class="tl-desc">Tutored K–6 students with disabilities using IEP-based personalized plans, with consistent progress tracking and session debriefs in individual home sessions.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="tl-header">
+                            <div>
+                                <div class="tl-title">Pop Dispatcher</div>
+                                <div class="tl-org">Bliss Pops</div>
+                            </div>
+                            <div class="tl-date">06/2025 – Present</div>
+                        </div>
+                        <p class="tl-desc">Packed and organized 5,000+ popsicles weekly, managed 1,000+ deliveries to Filoli Gardens semiweekly, supported large events, and helped streamline prep workflows.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="tl-header">
+                            <div>
+                                <div class="tl-title">Grader Student Assistant</div>
+                                <div class="tl-org">San Francisco State University</div>
+                            </div>
+                            <div class="tl-date">09/2024 – 05/2025 · 02/2026 – Present</div>
+                        </div>
+                        <p class="tl-desc">Graded and gave detailed feedback on assignments for 100+ students across Materials of Engineering and Dynamics. Hosted ASME study groups for additional tutoring support.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="tl-header">
+                            <div>
+                                <div class="tl-title">Research Lab Assistant — Tensegrity Lab</div>
+                                <div class="tl-org">San Francisco State University · Dr. Mojtaba Azadi</div>
+                            </div>
+                            <div class="tl-date">09/2024 – 03/2025</div>
+                        </div>
+                        <p class="tl-desc">Developed tensegrity structures to beautify the newly-built Science and Engineering Innovation Center at SFSU, drawing on Dr. Azadi's doctoral research for durable and elegant structural design.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="tl-header">
+                            <div>
+                                <div class="tl-title">STEAM Specialist</div>
+                                <div class="tl-org">Miraloma YMCA · ICCE Community-Based Intern</div>
+                            </div>
+                            <div class="tl-date">11/2023 – 05/2024</div>
+                        </div>
+                        <p class="tl-desc">Managed and developed 10–40 K-5 students daily in STEAM programming and outreach at an SFSU work-study placement.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="tl-header">
+                            <div>
+                                <div class="tl-title">Project Group Intern</div>
+                                <div class="tl-org">ACCO Engineered Services</div>
+                            </div>
+                            <div class="tl-date">05/2023 – 08/2023</div>
+                        </div>
+                        <p class="tl-desc">Assisted in estimation, bid process, preliminary design, proposal data, and document management for multiple ongoing projects across different divisions.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="tl-header">
+                            <div>
+                                <div class="tl-title">Game Day Student Staff</div>
+                                <div class="tl-org">SFSU Athletics Department</div>
+                            </div>
+                            <div class="tl-date">09/2022 – 04/2023</div>
+                        </div>
+                        <p class="tl-desc">Managed live broadcasts, scoreboard, camera work, and equipment for all SFSU sports (soccer, basketball, baseball, volleyball, track &amp; field) in a team of ~15.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="tl-header">
+                            <div>
+                                <div class="tl-title">Assistant HVAC Technician</div>
+                                <div class="tl-org">Airstars Corp. (f.k.a. Airtech Solutions)</div>
+                            </div>
+                            <div class="tl-date">Summers 2020 – 2022</div>
+                        </div>
+                        <p class="tl-desc">Trained in diagnostics and appliance sales alongside a team of experienced HVAC technicians, transporting parts and assisting installations across the Greater Bay Area.</p>
+                    </div>
+                </div>
+
+            </div><!-- end timeline -->
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ME ===== -->
+    <section class="section section-alt" id="aboutPage">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-tag">04 / About</span>
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-layout">
+                <div class="about-photos">
+                    <div class="about-slideshow-wrap">
+                        <div class="slidesAboutMe"><img src="images/about-me/Career_Fair_FA24.png" alt="Career Fair Fall 2024"></div>
+                        <div class="slidesAboutMe"><img src="images/about-me/Jose_Headshot.png" alt="José Barrios headshot"></div>
+                        <div class="slidesAboutMe"><img src="images/about-me/Pivot_Tour.jpeg" alt="Pivot tour"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Hello, I'm <strong>José Barrios</strong>, a Mechanical Engineering student at San Francisco State University with a minor in Electrical Engineering, aspiring to work in robotics, advanced manufacturing, and automation.</p>
+                    <p>My passion for engineering began watching my dad and uncles repair HVAC equipment as a kid. That curiosity turned into a commitment in high school when I joined my high school robotics team and participated in SMASH, a summer STEM program for Bay Area students.</p>
+                    <p>At SFSU, I've integrated into campus life as Co-President of ASME, grown a research background through the Tensegrity Lab and CARE Lab, and am now launching SFSU's first combat robotics team while developing my senior capstone project.</p>
+                    <div class="about-langs">
+                        <div class="lang-item"><span class="lang-name">English</span><span class="lang-level accent">Fluent</span></div>
+                        <div class="lang-item"><span class="lang-name">Spanish</span><span class="lang-level accent">Fluent</span></div>
+                        <div class="lang-item"><span class="lang-name">Portuguese</span><span class="lang-level">Intermediate</span></div>
+                        <div class="lang-item"><span class="lang-name">French</span><span class="lang-level">Intermediate</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact-section" id="contactPage">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-tag">05 / Contact</span>
+                <h2>Get In Touch</h2>
+                <p class="section-desc">I'm open to internships, full-time opportunities, and engineering conversations.</p>
+            </div>
+
+            <div class="contact-grid">
+                <a href="mailto:josembarriosm@icloud.com" class="contact-card">
+                    <div class="contact-icon">✉</div>
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">josembarriosm@icloud.com</div>
+                </a>
+                <a href="tel:5103727826" class="contact-card">
+                    <div class="contact-icon">☎</div>
+                    <div class="contact-label">Phone</div>
+                    <div class="contact-value">510-372-7826</div>
+                </a>
+                <a href="https://www.linkedin.com/in/jbarrios03" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">in</div>
+                    <div class="contact-label">LinkedIn</div>
+                    <div class="contact-value">linkedin.com/in/jbarrios03</div>
+                </a>
+                <a href="https://josebarrios.tech" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">⬡</div>
+                    <div class="contact-label">Website</div>
+                    <div class="contact-value">josebarrios.tech</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== IMAGE MODAL ===== -->
+    <div id="imageModal" class="modal hidden">
+        <span id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImg" alt="">
+        <div id="caption"></div>
     </div>
 
-    <div class="work">
-
-        <div id="resumeButton"><a id="openResume" href="https://drive.google.com/file/d/15clB51_R_wbx7l4nyCjuaT1V26Ju1-QH/view?usp=sharing" target="_blank" rel="noopener noreferrer">View My Complete Resume</a></div>
-
-        <div class="experience">
-            <h1>> Special Needs Tutor @ Tutor Me Education</h1>
-            <h2>06/2025 to Present</h2>
-            <p>Lorem ipsum dolor sit
-            <br><span>* Technically employed by High Impact Education, LLC</span></p>
-        </div>
-
-        <div class="experience">
-            <h1>> Pop Dispatcher @ Bliss Pops</h1>
-            <h2>06/2025 to Present</h2>
-            <p>Lorem ipsum dolor sit</p>
-        </div>
-
-        <div class="experience">
-            <h1>> Grader Student Assistant @ San Francisco State</h1>
-            <h2>09/2024 to 05/2025</h2>
-            <p>As a teaching assistant for the Materials of Engineering course, I grade and provide detailed feedback on homework assignments and lab memos for approximately 60 students. For the Dynamics course, I grade and provide feedback for quizzes and group work assignments for another roughly 60 students. Additionally, I collaborated with the ASME study groups initiative to offer tutoring support, helping students better understand course material and improve their academic performance.</p>
-        </div>
-
-        <div class="experience">
-            <h1>> STEAM Specialist @ Miraloma YMCA</h1>
-            <h2>11/2023 to 05/2024</h2>
-            <p>At one of the San Francisco YMCA's off-site locations, I participate as a STEAM Specialist, a volunteer position for the school's after-school program through a work-study program at ICCE (Institute for Civic and Community Engagement). I managed and developed K-5 students, working with 10 to 40 children daily. I facilitated programming that allowed students to engage with STEAM-related activities and supported the coordination of events and outreach initiatives aimed at fostering interest in science, technology, engineering, arts, and math.
-            <br><span>* Technically Community-Based Intern at ICCE (Institute for Civic and Community Engagement)</span></p>
-        </div>
-
-        <div class="experience">
-            <h1>> Project Group Intern @ ACCO Engineered Services</h1>
-            <h2>05/2023 to 08/2023</h2>
-            <p>As a project group intern, my main tasks were to assist in the estimation and bid process for potential and new jobs, as well as participating in preliminary design and collecting proposal data. This was followed with daily tasks such as writing letters and change orders to members of the company, communicating directly with clients, handling product documents and construction plans. The internship process also involved weekly workshops organized by the company for first-year interns and new hires to become more knowledgeable about all of the different divisions within the company, as well as attending several jobsite visits as an opportunity to see our assigned projects in person.</p>
-        </div>
-
-        <div class="experience">
-            <h1>> Game Day Student Staff @ SFSU Athletics Department</h1>
-            <h2>09/2022 to 04/2023</h2>
-            <p>As a student staff member for game days, I worked alongside a group of roughly 15 students and faculty in a variety of tasks. This included administering live broadcasts, controlling the scoreboard, managing the camera to record matches, tracking points and fouls during matches, as well as set up and took down the equipment used for the different sports. I worked in most sports matches, including soccer, basketball, baseball, volleyball, track and field, and more.</p>
-        </div>
-
-        <div class="experience">
-            <h1>> Assistant HVAC Technician @ Airstars Corp.</h1>
-            <h2>Summers of 2020, 2021, &amp; 2022</h2>
-            <p>As an assistant technician, I worked closely with a small team of experienced HVAC technicians in various aspects. I was primarily trained in diagnostics, investigating appliance issues and conducting sales on a day-to-day basis. Additional tasks included transporting machines, parts, and other equipment to different jobs across the Greater Bay Area, as well as assisting in the installation of new appliance systems. Aside from assisting the main diagnostics technician, I led appliance diagnostics and assisted in HVAC installations.
-            <br><span>* Formerly known as Airtech Solutions</span></p>
-        </div>
-
-    </div>
-
-    <div class="whoAmI" id="aboutPage">
-
-        <h1>Hello, my name is Jos&eacute;! I am an <span class="alt">Bay Area</span> local, <span class="alt">mechanical engineering</span> student interested in <span class="alt">robotics and automated manufacturing.</span></h1>
-
-        <div class="slideshow adaptive container">
-
-            <div class="slidesAboutMe"><img src="images/about-me/Career_Fair_FA24.png" alt=""></div>
-            <div class="slidesAboutMe"><img src="images/about-me/Jose_Headshot.png" alt="Picture of Jose Barrios"></div>
-            <div class="slidesAboutMe"><img src="images/about-me/Pivot_Tour.jpeg" alt=""></div>
-
-        </div>
-
-        <p>(Description about myself) Lorem ipsum dolor sit amet, alii fuisset qui an, cu sea impedit consectetuer. Eam no altera inermis, iudico comprehensam an vim. Ad luptatum evertitur qui. Ex vix justo quaeque invidunt. Veniam petentium concludaturque ut sed, tollit lobortis vituperata te vix.</p>
-
-        <h1 id="contactPage">Now that you've reached the end of this page,<span class="alt"> feel free to contact me!</span></h1>
-        <h2> > Email: josembarriosm@icloud.com</h2>
-        <h2> > Phone Number: 510-372-7826</h2>
-        <a href="https://www.linkedin.com/in/jbarrios03" target="_blank" rel="noopener noreferrer"><h2> > LinkedIn Page</h2></a>
-
-    </div>
-
+    <script src="source.js"></script>
 </body>
-
-<script src="source.js"></script>
-
 </html>
